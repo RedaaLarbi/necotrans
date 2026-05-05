@@ -8,32 +8,32 @@
     "getQuote": "Demander un Devis"
   },
   "hero": {
-    "badge": "Alger, Algérie · Spécialiste Algérie–UE",
-    "title": "Transitaire International",
-    "subtitle": "Votre partenaire logistique de confiance — basé à Alger, spécialisé sur la ligne Algérie–Espagne & UE, au service de clients dans le monde entier.",
+    "badge": "Alger, Algérie · Depuis 2006",
+    "title": "Votre Logistique, Notre Engagement",
+    "subtitle": "necotrans Transit est un commissionnaire en douane et prestataire logistique engagé envers ses clients. Notre mission : simplifier votre logistique — vos problèmes deviennent les nôtres, nos solutions deviennent les vôtres.",
     "cta1": "Demander un Devis",
     "cta2": "Nos Services"
   },
   "services": {
     "label": "Nos Services",
-    "heading": "Solutions de Fret Complètes",
-    "subtitle": "D'un simple colis à un affrètement complet — la même expertise, à chaque expédition.",
-    "sea": { "title": "Fret Maritime", "desc": "Solutions FCL & LCL en Méditerranée et sur les routes hauturières, avec des tarifs compétitifs et un suivi en temps réel." },
-    "air": { "title": "Fret Aérien", "desc": "Cargo aérien express et économique pour les expéditions urgentes vers n'importe quelle destination mondiale." },
-    "road": { "title": "Transport Routier", "desc": "FTL et groupage sur le couloir Algérie–Espagne & UE, avec des liaisons directes vers les marchés européens." },
-    "customs": { "title": "Dédouanement", "desc": "Commissionnaires agréés assurant la conformité des importations/exportations en Algérie et dans l'Union européenne." },
-    "warehousing": { "title": "Entreposage", "desc": "Stockage sous douane et en magasin général à Alger, avec services de préparation de commandes et distribution." },
-    "doorToDoor": { "title": "Porte-à-Porte", "desc": "Logistique de bout en bout de l'origine à la destination finale — un seul interlocuteur, zéro souci." },
+    "heading": "Une Gamme Complète de Services Logistiques",
+    "subtitle": "Du dédouanement aux projets de transport lourd — nous gérons tout à travers l'Algérie.",
+    "customs": { "title": "Dédouanement", "desc": "Dédouanement import/export, collectes et livraisons locales, entreposage, consolidation, marchandises dangereuses et conseil douanier." },
+    "maritime": { "title": "Services Maritimes", "desc": "Agence et coordination pour le dédouanement portuaire, envois dangereux, expéditions maritimes exceptionnelles, importation/exportation temporaire et autorisations marines marchandes." },
+    "airport": { "title": "Assistance Aéroportuaire", "desc": "Accueil à l'aéroport, dédouanement, transport local, étude des projets d'import/export temporaires et permanents, achats locaux et avances de trésorerie." },
+    "stevedoring": { "title": "Acconage / Manutention", "desc": "Services d'acconage professionnels dans les ports algériens : chargement, déchargement et manutention pour tous types de navires." },
+    "trucking": { "title": "Transport Routier", "desc": "Transport routier local et national avec une flotte de 10 véhicules de service couvrant toutes les régions d'Algérie." },
+    "projectLogistics": { "title": "Logistique de Projets", "desc": "Solutions de transport lourd pour les marchandises dépassant 4 000 MT. Équipements spécialisés pour les cargaisons hors gabarit." },
     "learnMore": "En Savoir Plus"
   },
   "corridor": {
-    "label": "Notre Spécialisation",
-    "heading": "Ligne Algérie – Espagne & UE",
-    "subtitle": "Necotrans est le partenaire de référence pour le couloir commercial Algérie–Europe, avec des départs hebdomadaires dédiés, une expertise locale des deux côtés et une expérience porte-à-porte sans faille.",
-    "stat1": "Départs Hebdomadaires",
-    "stat2": "Jours de Transit",
-    "stat3": "Ans sur le Couloir",
-    "cta": "Découvrir le Service"
+    "label": "Notre Couverture",
+    "heading": "7 Agences à Travers l'Algérie",
+    "subtitle": "Avec des bureaux à Alger (siège), Oran, Mostaganem, Arzew, Skikda, Djendjen et Annaba, necotrans Transit assure une couverture nationale complète — prêt à vous accompagner dans chaque port et aéroport algérien.",
+    "stat1": "Agences en Algérie",
+    "stat2": "Véhicules de Service",
+    "stat3": "Années d'Expérience",
+    "cta": "Nos Bureaux"
   },
   "industries": {
     "label": "Notre Expertise",
@@ -48,16 +48,17 @@
     "projectCargo": "Projets Spéciaux"
   },
   "stats": {
-    "years": "Années d'Expérience",
-    "countries": "Pays Desservis",
-    "shipments": "Expéditions Livrées",
-    "clients": "Clients Satisfaits"
+    "years": "Depuis 2006",
+    "branches": "Agences en Algérie",
+    "staff": "Professionnels",
+    "vehicles": "Véhicules de Service"
   },
   "about": {
-    "label": "À Propos de Necotrans",
-    "heading": "La Porte de l'Algérie vers le Commerce Mondial",
-    "body": "Fondé à Alger, Necotrans est devenu l'un des principaux transitaires algériens. Depuis plus de vingt ans, nous accompagnons importateurs, exportateurs et entreprises internationales dans leurs échanges transfrontaliers — avec une expertise particulière sur le couloir Algérie–Espagne & UE et un réseau d'agents mondial présent dans plus de 50 pays.",
-    "cta": "Notre Histoire"
+    "label": "À Propos de necotrans Transit",
+    "heading": "Commissionnaire et Prestataire Logistique de Référence en Algérie",
+    "body": "Fondée en 2006 et dirigée par M. Said Amine LARBI, necotrans Transit Algérie est l'un des principaux commissionnaires en douane et prestataires logistiques algériens. Avec 19 professionnels bilingues (anglais et français), 10 véhicules de service et 7 agences couvrant tout le territoire — d'Alger à Annaba — nous sommes engagés à simplifier votre logistique à chaque étape.",
+    "cta": "Notre Histoire",
+    "mission": "Notre engagement fait la différence."
   },
   "news": {
     "label": "Dernières Actualités",
@@ -65,20 +66,21 @@
     "readMore": "Lire la Suite"
   },
   "cta": {
-    "heading": "Prêt à expédier votre marchandise ?",
-    "subtitle": "Obtenez un devis compétitif sous 24 heures. Notre équipe gère chaque détail.",
+    "heading": "Prêt à simplifier votre logistique ?",
+    "subtitle": "Contactez notre équipe aujourd'hui. Vos problèmes deviennent les nôtres, nos solutions deviennent les vôtres.",
     "cta1": "Demander un Devis",
     "cta2": "Nous Appeler"
   },
   "footer": {
-    "tagline": "Transitaire algérien de confiance. Spécialiste de la ligne Algérie–Espagne & UE — au service de clients partout dans le monde.",
+    "tagline": "Commissionnaire en douane et prestataire logistique engagé à simplifier votre logistique à travers l'Algérie. Depuis 2006.",
     "services": "Services",
     "company": "Entreprise",
     "contact": "Contact",
-    "copyright": "Necotrans. Tous droits réservés.",
+    "hq": "03 Cité Sonelgaz, Gué de Constantine — Alger",
+    "hours": "Dim–Jeu : 8h30–12h00 / 13h00–17h00",
+    "copyright": "necotrans Transit Algérie. Tous droits réservés.",
     "privacy": "Politique de Confidentialité",
-    "terms": "Conditions d'Utilisation",
-    "hq": "Siège Social — Alger, Algérie"
+    "terms": "Conditions d'Utilisation"
   },
   "contact": {
     "formHeading": "Demander un Devis",
@@ -92,6 +94,8 @@
     "submit": "Envoyer la Demande",
     "success": "Message envoyé ! Nous vous répondrons sous 24 heures.",
     "selectService": "Choisir un service…",
-    "officesHeading": "Notre Bureau"
+    "officesHeading": "Nos Agences",
+    "director": "Directeur Général",
+    "workingHours": "Horaires d'Ouverture"
   }
 }

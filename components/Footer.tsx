@@ -9,12 +9,12 @@ export default function Footer() {
   const nav = useTranslations("nav");
 
   const services = [
-    { label: "Sea Freight",       href: "/services#sea" },
-    { label: "Air Freight",       href: "/services#air" },
-    { label: "Road Transport",    href: "/services#road" },
-    { label: "Customs Clearance", href: "/services#customs" },
-    { label: "Warehousing",       href: "/services#warehousing" },
-    { label: "Door-to-Door",      href: "/services#doorToDoor" },
+    { label: "Customs Clearance",  href: "/services#customs" },
+    { label: "Maritime Services",  href: "/services#maritime" },
+    { label: "Airport Support",    href: "/services#airport" },
+    { label: "Stevedoring",        href: "/services#stevedoring" },
+    { label: "Trucking",           href: "/services#trucking" },
+    { label: "Project Logistics",  href: "/services#projectLogistics" },
   ];
 
   const company = [
@@ -85,14 +85,15 @@ export default function Footer() {
               <li className="flex gap-3">
                 <MapPin className="h-4 w-4 text-[var(--orange)] flex-shrink-0 mt-0.5" />
                 <div className="text-sm text-white/65">
-                  <p className="font-medium text-white">{t("hq")}</p>
+                  <p className="font-medium text-white">Algiers — Head Office</p>
+                  <p className="text-xs mt-0.5">{t("hq")}</p>
                 </div>
               </li>
               <li>
                 <a href="tel:+213770905969"
                   className="flex gap-3 text-sm text-white/65 hover:text-white transition-colors">
                   <Phone className="h-4 w-4 text-[var(--orange)] flex-shrink-0 mt-0.5" />
-                  +213 77 090 59 69
+                  +213 (0)7 70 90 59 69
                 </a>
               </li>
               <li>
@@ -102,6 +103,7 @@ export default function Footer() {
                   info@necotrans.com
                 </a>
               </li>
+              <li className="text-xs text-white/40 ps-7">{t("hours")}</li>
             </ul>
           </div>
         </div>

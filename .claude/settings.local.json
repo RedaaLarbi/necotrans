@@ -5,7 +5,13 @@
       "Bash(pkill -f \"next dev\")",
       "Bash(npm run *)",
       "WebFetch(domain:unsplash.com)",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(gh repo *)",
+      "Bash(npm i *)",
+      "Bash(sudo npm *)",
+      "Bash(npx vercel *)",
+      "Bash(git push *)"
     ]
   }
 }

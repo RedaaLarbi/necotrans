@@ -8,32 +8,32 @@
     "getQuote": "Get a Quote"
   },
   "hero": {
-    "badge": "Algiers, Algeria · Algeria–EU Specialist",
-    "title": "International Freight Forwarding",
-    "subtitle": "Your trusted logistics partner — headquartered in Algiers, specialised in the Algeria–Spain & EU corridor, serving clients worldwide.",
+    "badge": "Algiers, Algeria · Est. 2006",
+    "title": "Your Logistics, Our Commitment",
+    "subtitle": "necotrans Transit is a local broker and logistic provider committed with its customers. Our mission is to simplify your logistics — making your problems ours and our solutions yours.",
     "cta1": "Request a Quote",
     "cta2": "Our Services"
   },
   "services": {
     "label": "Our Services",
-    "heading": "Comprehensive Freight Solutions",
-    "subtitle": "From a single parcel to a full charter — same expertise, every shipment.",
-    "sea": { "title": "Sea Freight", "desc": "FCL & LCL solutions across the Mediterranean and deep-sea routes, with competitive rates and real-time tracking." },
-    "air": { "title": "Air Freight", "desc": "Express and economy air cargo for time-critical shipments to any destination worldwide." },
-    "road": { "title": "Road Transport", "desc": "FTL and groupage on the Algeria–Spain & EU corridor, with direct links to European markets." },
-    "customs": { "title": "Customs Clearance", "desc": "Licensed brokers ensuring smooth import/export compliance in Algeria and the European Union." },
-    "warehousing": { "title": "Warehousing", "desc": "Secure bonded and general storage in Algiers, with pick-and-pack and last-mile distribution." },
-    "doorToDoor": { "title": "Door-to-Door", "desc": "End-to-end logistics from origin to final destination — one point of contact, zero stress." },
+    "heading": "A Complete Range of Logistics Services",
+    "subtitle": "From customs clearance to heavy-lift project cargo — we handle it all across Algeria.",
+    "customs": { "title": "Customs Clearance", "desc": "Import/export customs clearance, local collections and deliveries, warehousing, consolidation, dangerous goods handling, and customs consultancy." },
+    "maritime": { "title": "Maritime Services", "desc": "Agency and coordination for customs clearance at ports, dangerous shipments, exceptional maritime shipments, temporary importation/exportation, and merchant marine authorizations." },
+    "airport": { "title": "Airport Support", "desc": "Airport meet & greet, customs clearance, local transportation/transfers, temporary and permanent import/export projects, local purchasing, and cash advances." },
+    "stevedoring": { "title": "Stevedoring", "desc": "Professional stevedoring services at Algerian ports including loading, unloading, and cargo handling for all vessel types." },
+    "trucking": { "title": "Trucking & Road Haulage", "desc": "Local and national road transport with a fleet of 10 service vehicles covering all regions of Algeria." },
+    "projectLogistics": { "title": "Project Logistics", "desc": "Heavy-lift transport solutions for cargo exceeding 4,000 MT. Specialized equipment and expertise for oversized and out-of-gauge shipments." },
     "learnMore": "Learn More"
   },
   "corridor": {
-    "label": "Our Specialisation",
-    "heading": "Algeria – Spain & EU Line",
-    "subtitle": "Necotrans is the reference partner for the Algeria–Europe trade corridor, offering dedicated weekly departures, local expertise on both sides, and a seamless door-to-door experience.",
-    "stat1": "Weekly Departures",
-    "stat2": "Transit Days",
-    "stat3": "Years on the Corridor",
-    "cta": "Discover the Service"
+    "label": "Our Coverage",
+    "heading": "7 Branches Across Algeria",
+    "subtitle": "With offices in Algiers (HQ), Oran, Mostaganem, Arzew, Skikda, Djendjen and Annaba, necotrans Transit provides complete national coverage — ready to support you at every Algerian port and airport.",
+    "stat1": "Branches Nationwide",
+    "stat2": "Service Vehicles",
+    "stat3": "Years of Experience",
+    "cta": "Our Offices"
   },
   "industries": {
     "label": "Our Expertise",
@@ -48,16 +48,17 @@
     "projectCargo": "Project Cargo"
   },
   "stats": {
-    "years": "Years of Experience",
-    "countries": "Countries Served",
-    "shipments": "Shipments Delivered",
-    "clients": "Satisfied Clients"
+    "years": "Est. 2006",
+    "branches": "Branches in Algeria",
+    "staff": "Professionals",
+    "vehicles": "Service Vehicles"
   },
   "about": {
-    "label": "About Necotrans",
-    "heading": "Algeria's Gateway to Global Trade",
-    "body": "Founded in Algiers, Necotrans has grown into one of Algeria's leading freight forwarding companies. For over two decades we have helped Algerian importers, exporters, and international companies navigate complex cross-border trade — with particular expertise on the Algeria–Spain & EU corridor and a global agent network spanning 50+ countries.",
-    "cta": "Our Story"
+    "label": "About necotrans Transit",
+    "heading": "Algeria's Trusted Broker & Logistic Provider",
+    "body": "Established in 2006 and led by Managing Director Mr. Said Amine LARBI, necotrans Transit Algeria is one of Algeria's leading customs brokers and logistic providers. With 19 professionals fluent in English and French, 10 service vehicles, and 7 branches covering the entire country — from Algiers to Annaba — we are committed to simplifying your logistics at every step.",
+    "cta": "Our Story",
+    "mission": "Our commitment makes the difference."
   },
   "news": {
     "label": "Latest News",
@@ -65,20 +66,21 @@
     "readMore": "Read More"
   },
   "cta": {
-    "heading": "Ready to move your cargo?",
-    "subtitle": "Get a competitive freight quote within 24 hours. Our team handles every detail.",
+    "heading": "Ready to simplify your logistics?",
+    "subtitle": "Contact our team today. We make your problems ours and our solutions yours.",
     "cta1": "Request a Quote",
     "cta2": "Call Us"
   },
   "footer": {
-    "tagline": "Algeria's trusted freight forwarder. Specialists in the Algeria–Spain & EU corridor — serving clients worldwide.",
+    "tagline": "Local broker and logistic provider committed to simplifying your logistics across Algeria. Est. 2006.",
     "services": "Services",
     "company": "Company",
     "contact": "Contact",
-    "copyright": "Necotrans. All rights reserved.",
+    "hq": "03 Cité Sonelgaz, Gué de Constantine — Alger",
+    "hours": "Sun–Thu: 8:30–12:00 / 13:00–17:00",
+    "copyright": "necotrans Transit Algeria. All rights reserved.",
     "privacy": "Privacy Policy",
-    "terms": "Terms of Service",
-    "hq": "Head Office — Algiers, Algeria"
+    "terms": "Terms of Service"
   },
   "contact": {
     "formHeading": "Request a Quote",
@@ -90,8 +92,10 @@
     "message": "Shipment Details",
     "messagePlaceholder": "Origin, destination, cargo type, weight/volume, timeline…",
     "submit": "Send Request",
-    "success": "Message Sent! We'll be in touch within 24 hours.",
+    "success": "Message sent! We will get back to you within 24 hours.",
     "selectService": "Select a service…",
-    "officesHeading": "Our Office"
+    "officesHeading": "Our Offices",
+    "director": "Managing Director",
+    "workingHours": "Working Hours"
   }
 }

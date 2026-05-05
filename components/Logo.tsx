@@ -5,68 +5,58 @@ export default function Logo({
   className?: string;
   variant?: "light" | "dark";
 }) {
-  const nameColor    = variant === "dark" ? "#ffffff"              : "#0a1e54";
-  const tagColor     = variant === "dark" ? "rgba(255,255,255,0.50)" : "#1e3a8a";
-  const transitColor = variant === "dark" ? "rgba(255,255,255,0.70)" : "#1e3a8a";
+  const nameColor    = variant === "dark" ? "#ffffff"              : "#555555";
+  const transitColor = variant === "dark" ? "rgba(255,255,255,0.70)" : "#888888";
 
   return (
     <svg
-      viewBox="0 0 320 88"
+      viewBox="0 0 250 78"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
-      aria-label="Transit Necotrans"
+      aria-label="necotrans Transit"
       role="img"
     >
-      {/* ── "TRANSIT" super-label ── */}
-      {/* Left accent bar */}
-      <rect x="0" y="8" width="3" height="12" rx="1.5" fill="#e63946" />
+      {/* ── Red swoosh / wing icon ── */}
+      {/* 7 curved stripes fanning from lower-left to upper-right */}
+      {/* Stripe 1 — innermost */}
+      <path d="M 9 68 Q 3 44 24 10 L 28 13 Q 8 47 13 68 Z" fill="#D42B2B"/>
+      {/* Stripe 2 */}
+      <path d="M 15 70 Q 8 43 32 8 L 36 11 Q 12 45 19 70 Z" fill="#D32828"/>
+      {/* Stripe 3 */}
+      <path d="M 22 71 Q 14 42 40 6 L 44 9 Q 18 44 26 71 Z" fill="#CC2424"/>
+      {/* Stripe 4 — middle */}
+      <path d="M 29 72 Q 21 41 48 5 L 52 8 Q 25 43 33 72 Z" fill="#C82020"/>
+      {/* Stripe 5 */}
+      <path d="M 36 72 Q 28 40 56 4 L 60 7 Q 32 42 40 72 Z" fill="#C41C1C"/>
+      {/* Stripe 6 */}
+      <path d="M 44 71 Q 36 38 63 3 L 67 6 Q 40 40 48 71 Z" fill="#C01818"/>
+      {/* Stripe 7 — outermost */}
+      <path d="M 52 69 Q 44 36 69 1 L 72 4 Q 48 38 56 69 Z" fill="#BB1414"/>
 
-      {/* "TRANSIT" text */}
+      {/* ── Wordmark ── */}
+      {/* "necotrans" — lowercase, medium weight, gray */}
       <text
-        x="9" y="19"
+        x="80" y="46"
         fontFamily="'Helvetica Neue', Helvetica, Arial, sans-serif"
-        fontSize="11"
-        fontWeight="700"
-        letterSpacing="5"
-        fill={transitColor}
-      >
-        TRANSIT
-      </text>
-
-      {/* Thin line extending after TRANSIT */}
-      <line x1="82" y1="13" x2="220" y2="13" stroke={transitColor} strokeWidth="0.8" strokeOpacity="0.35" />
-
-      {/* ── "Necotrans" main wordmark ── */}
-      <text
-        x="0" y="60"
-        fontFamily="'Helvetica Neue', Helvetica, Arial, sans-serif"
-        fontSize="50"
-        fontWeight="800"
-        letterSpacing="-2.5"
+        fontSize="34"
+        fontWeight="400"
+        letterSpacing="-0.5"
         fill={nameColor}
       >
-        Necotrans
+        necotrans
       </text>
 
-      {/* Red accent dot */}
-      <circle cx="309" cy="48" r="5" fill="#e63946" />
-
-      {/* Three-colour divider */}
-      <line x1="1"   y1="69" x2="90"  y2="69" stroke="#e63946" strokeWidth="2.5" strokeLinecap="round" />
-      <line x1="95"  y1="69" x2="170" y2="69" stroke="#f4a261" strokeWidth="2.5" strokeLinecap="round" />
-      <line x1="175" y1="69" x2="225" y2="69" stroke="#1e3a8a" strokeWidth="2.5" strokeLinecap="round" />
-
-      {/* Tagline */}
+      {/* "Transit" — below, lighter, smaller */}
       <text
-        x="1" y="80"
+        x="83" y="66"
         fontFamily="'Helvetica Neue', Helvetica, Arial, sans-serif"
-        fontSize="8.5"
-        fontWeight="600"
-        letterSpacing="3.5"
-        fill={tagColor}
+        fontSize="20"
+        fontWeight="300"
+        letterSpacing="0.5"
+        fill={transitColor}
       >
-        GLOBAL  ·  TRANSPORT  ·  LOGISTICS
+        Transit
       </text>
     </svg>
   );

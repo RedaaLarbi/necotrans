@@ -3,10 +3,40 @@
 import Image from "next/image";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
-import { Phone, Mail, MapPin, Clock, Send } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, Send, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
+
+const offices = [
+  {
+    city: "Algiers",
+    role: "Head Office",
+    address: "03 Cité Sonelgaz, Gué de Constantine — Alger",
+    phone: "+213 (0)7 70 90 59 69",
+    email: "info@necotrans.com",
+    hours: "Sun–Thu: 8:30–12:00 / 13:00–17:00",
+    primary: true,
+  },
+  {
+    city: "Oran",
+    role: "Branch",
+    address: "Cité Khmisti Bt A1B N° 1, ORAN bp 31023",
+    phone: "",
+    email: "",
+    hours: "Sun–Thu: 8:30–17:00",
+    primary: false,
+  },
+  {
+    city: "Skikda",
+    role: "Branch",
+    address: "Rue brahim maiza, Bt B N° 01, Skikda 21000",
+    phone: "",
+    email: "",
+    hours: "Sun–Thu: 8:30–17:00",
+    primary: false,
+  },
+];
 
 export default function ContactPage() {
   const t = useTranslations("contact");
@@ -34,6 +64,7 @@ export default function ContactPage() {
       <section className="py-20 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-3 gap-12">
+
             {/* Form */}
             <div className="lg:col-span-2">
               <h2 className="text-2xl font-bold text-foreground mb-6">{t("formHeading")}</h2>
@@ -72,12 +103,13 @@ export default function ContactPage() {
                     <label htmlFor="service" className="block text-sm font-medium text-foreground mb-1.5">{t("service")}</label>
                     <select id="service" name="service" value={form.service} onChange={handleChange} className={inputCls}>
                       <option value="">{t("selectService")}</option>
-                      <option value="sea">Sea Freight</option>
-                      <option value="air">Air Freight</option>
-                      <option value="road">Road Transport</option>
                       <option value="customs">Customs Clearance</option>
-                      <option value="warehousing">Warehousing</option>
-                      <option value="doorToDoor">Door-to-Door</option>
+                      <option value="maritime">Maritime Services</option>
+                      <option value="airport">Airport Support</option>
+                      <option value="stevedoring">Stevedoring</option>
+                      <option value="trucking">Trucking / Road Haulage</option>
+                      <option value="projectLogistics">Project Logistics</option>
+                      <option value="husbandry">Husbandry</option>
                     </select>
                   </div>
                   <div>
@@ -93,38 +125,64 @@ export default function ContactPage() {
             </div>
 
             {/* Office info */}
-            <div className="space-y-6">
+            <div className="space-y-5">
               <h2 className="text-2xl font-bold text-foreground">{t("officesHeading")}</h2>
-              <Card className="border-border">
-                <CardContent className="p-6 space-y-4">
-                  <div>
-                    <p className="text-xs font-medium text-[var(--brand)] uppercase tracking-wider">Head Office</p>
-                    <h3 className="font-semibold text-foreground mt-1">Algiers, Algeria</h3>
-                  </div>
-                  <Separator />
-                  <ul className="space-y-3">
-                    <li className="flex items-start gap-3">
-                      <Phone className="h-4 w-4 text-[var(--brand)] mt-0.5 flex-shrink-0" />
-                      <a href="tel:+213770905969" className="text-sm text-foreground hover:text-[var(--brand)] transition-colors">+213 77 090 59 69</a>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <Mail className="h-4 w-4 text-[var(--brand)] mt-0.5 flex-shrink-0" />
-                      <a href="mailto:info@necotrans.com" className="text-sm text-foreground hover:text-[var(--brand)] transition-colors">info@necotrans.com</a>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <Clock className="h-4 w-4 text-[var(--brand)] mt-0.5 flex-shrink-0" />
-                      <span className="text-sm text-muted-foreground">Sun–Thu: 8:00 – 17:00</span>
-                    </li>
-                  </ul>
-                </CardContent>
-              </Card>
+
+              {/* Director card */}
               <Card className="bg-[var(--brand)] text-white border-0">
-                <CardContent className="p-6">
-                  <MapPin className="h-6 w-6 mb-3 opacity-80" />
-                  <h3 className="font-semibold mb-2">Algeria–EU Corridor</h3>
-                  <p className="text-sm text-white/75">Specialists on the Algeria–Spain & EU trade route. Weekly departures, competitive transit times.</p>
+                <CardContent className="p-5">
+                  <User className="h-5 w-5 mb-2 opacity-80" />
+                  <p className="text-xs uppercase tracking-wider text-white/60 mb-1">{t("director")}</p>
+                  <p className="font-bold text-white">Mr. Said Amine LARBI</p>
                 </CardContent>
               </Card>
+
+              {/* Offices */}
+              {offices.map((office) => (
+                <Card key={office.city} className={`border-border ${office.primary ? "border-[var(--brand)]/30" : ""}`}>
+                  <CardContent className="p-5 space-y-3">
+                    <div>
+                      <p className="text-xs font-medium text-[var(--brand)] uppercase tracking-wider">{office.role}</p>
+                      <h3 className="font-bold text-foreground mt-0.5">{office.city}</h3>
+                    </div>
+                    <Separator />
+                    <ul className="space-y-2">
+                      <li className="flex items-start gap-2">
+                        <MapPin className="h-3.5 w-3.5 text-[var(--brand)] mt-0.5 flex-shrink-0" />
+                        <span className="text-xs text-muted-foreground">{office.address}</span>
+                      </li>
+                      {office.phone && (
+                        <li>
+                          <a href={`tel:${office.phone.replace(/\s|\(0\)/g, "")}`}
+                            className="flex items-center gap-2 text-xs text-foreground hover:text-[var(--brand)] transition-colors">
+                            <Phone className="h-3.5 w-3.5 text-[var(--brand)] flex-shrink-0" />
+                            {office.phone}
+                          </a>
+                        </li>
+                      )}
+                      {office.email && (
+                        <li>
+                          <a href={`mailto:${office.email}`}
+                            className="flex items-center gap-2 text-xs text-foreground hover:text-[var(--brand)] transition-colors">
+                            <Mail className="h-3.5 w-3.5 text-[var(--brand)] flex-shrink-0" />
+                            {office.email}
+                          </a>
+                        </li>
+                      )}
+                      <li className="flex items-center gap-2">
+                        <Clock className="h-3.5 w-3.5 text-[var(--brand)] flex-shrink-0" />
+                        <span className="text-xs text-muted-foreground">{office.hours}</span>
+                      </li>
+                    </ul>
+                  </CardContent>
+                </Card>
+              ))}
+
+              {/* Other branches */}
+              <div className="p-4 rounded-xl bg-muted/50 border border-border">
+                <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-2">Also present in</p>
+                <p className="text-sm text-foreground font-medium">Mostaganem · Arzew · Djendjen · Annaba</p>
+              </div>
             </div>
           </div>
         </div>
