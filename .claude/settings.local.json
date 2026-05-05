@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(open *)",
+      "Bash(pkill -f \"next dev\")",
+      "Bash(npm run *)",
+      "WebFetch(domain:unsplash.com)",
+      "Bash(git add *)"
+    ]
+  }
+}

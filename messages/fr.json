@@ -1,0 +1,97 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "services": "Services",
+    "about": "À Propos",
+    "news": "Actualités",
+    "contact": "Contact",
+    "getQuote": "Demander un Devis"
+  },
+  "hero": {
+    "badge": "Alger, Algérie · Spécialiste Algérie–UE",
+    "title": "Transitaire International",
+    "subtitle": "Votre partenaire logistique de confiance — basé à Alger, spécialisé sur la ligne Algérie–Espagne & UE, au service de clients dans le monde entier.",
+    "cta1": "Demander un Devis",
+    "cta2": "Nos Services"
+  },
+  "services": {
+    "label": "Nos Services",
+    "heading": "Solutions de Fret Complètes",
+    "subtitle": "D'un simple colis à un affrètement complet — la même expertise, à chaque expédition.",
+    "sea": { "title": "Fret Maritime", "desc": "Solutions FCL & LCL en Méditerranée et sur les routes hauturières, avec des tarifs compétitifs et un suivi en temps réel." },
+    "air": { "title": "Fret Aérien", "desc": "Cargo aérien express et économique pour les expéditions urgentes vers n'importe quelle destination mondiale." },
+    "road": { "title": "Transport Routier", "desc": "FTL et groupage sur le couloir Algérie–Espagne & UE, avec des liaisons directes vers les marchés européens." },
+    "customs": { "title": "Dédouanement", "desc": "Commissionnaires agréés assurant la conformité des importations/exportations en Algérie et dans l'Union européenne." },
+    "warehousing": { "title": "Entreposage", "desc": "Stockage sous douane et en magasin général à Alger, avec services de préparation de commandes et distribution." },
+    "doorToDoor": { "title": "Porte-à-Porte", "desc": "Logistique de bout en bout de l'origine à la destination finale — un seul interlocuteur, zéro souci." },
+    "learnMore": "En Savoir Plus"
+  },
+  "corridor": {
+    "label": "Notre Spécialisation",
+    "heading": "Ligne Algérie – Espagne & UE",
+    "subtitle": "Necotrans est le partenaire de référence pour le couloir commercial Algérie–Europe, avec des départs hebdomadaires dédiés, une expertise locale des deux côtés et une expérience porte-à-porte sans faille.",
+    "stat1": "Départs Hebdomadaires",
+    "stat2": "Jours de Transit",
+    "stat3": "Ans sur le Couloir",
+    "cta": "Découvrir le Service"
+  },
+  "industries": {
+    "label": "Notre Expertise",
+    "heading": "Spécialisés dans Votre Secteur",
+    "oilGas": "Pétrole & Gaz",
+    "automotive": "Automobile",
+    "pharma": "Pharmaceutique",
+    "food": "Agroalimentaire",
+    "construction": "Construction",
+    "mining": "Mines & Métaux",
+    "retail": "Distribution & E-Commerce",
+    "projectCargo": "Projets Spéciaux"
+  },
+  "stats": {
+    "years": "Années d'Expérience",
+    "countries": "Pays Desservis",
+    "shipments": "Expéditions Livrées",
+    "clients": "Clients Satisfaits"
+  },
+  "about": {
+    "label": "À Propos de Necotrans",
+    "heading": "La Porte de l'Algérie vers le Commerce Mondial",
+    "body": "Fondé à Alger, Necotrans est devenu l'un des principaux transitaires algériens. Depuis plus de vingt ans, nous accompagnons importateurs, exportateurs et entreprises internationales dans leurs échanges transfrontaliers — avec une expertise particulière sur le couloir Algérie–Espagne & UE et un réseau d'agents mondial présent dans plus de 50 pays.",
+    "cta": "Notre Histoire"
+  },
+  "news": {
+    "label": "Dernières Actualités",
+    "heading": "Mises à Jour du Secteur",
+    "readMore": "Lire la Suite"
+  },
+  "cta": {
+    "heading": "Prêt à expédier votre marchandise ?",
+    "subtitle": "Obtenez un devis compétitif sous 24 heures. Notre équipe gère chaque détail.",
+    "cta1": "Demander un Devis",
+    "cta2": "Nous Appeler"
+  },
+  "footer": {
+    "tagline": "Transitaire algérien de confiance. Spécialiste de la ligne Algérie–Espagne & UE — au service de clients partout dans le monde.",
+    "services": "Services",
+    "company": "Entreprise",
+    "contact": "Contact",
+    "copyright": "Necotrans. Tous droits réservés.",
+    "privacy": "Politique de Confidentialité",
+    "terms": "Conditions d'Utilisation",
+    "hq": "Siège Social — Alger, Algérie"
+  },
+  "contact": {
+    "formHeading": "Demander un Devis",
+    "name": "Nom Complet",
+    "company": "Société",
+    "email": "E-mail",
+    "phone": "Téléphone",
+    "service": "Service Souhaité",
+    "message": "Détails de l'Expédition",
+    "messagePlaceholder": "Origine, destination, type de marchandise, poids/volume, délai…",
+    "submit": "Envoyer la Demande",
+    "success": "Message envoyé ! Nous vous répondrons sous 24 heures.",
+    "selectService": "Choisir un service…",
+    "officesHeading": "Notre Bureau"
+  }
+}
