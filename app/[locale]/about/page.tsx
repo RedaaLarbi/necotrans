@@ -7,7 +7,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = { title: "About Us – necotrans Transit" };
+export const metadata: Metadata = { title: "About Us – Necotrans Transit" };
 
 const values = [
   { icon: Target, title: "Commitment",  desc: "Our commitment makes the difference. We treat your logistics problems as our own and deliver solutions tailored to your needs." },
@@ -26,7 +26,7 @@ const branches = [
 ];
 
 const timeline = [
-  { year: "2006",  title: "Founded in Algiers", desc: "necotrans Transit Algeria was established by Managing Director Mr. Said Amine LARBI, with a focus on customs brokerage and freight forwarding for Algerian importers and exporters." },
+  { year: "2006",  title: "Founded in Algiers", desc: "Necotrans Transit Algeria was established by Managing Director Mr. Said Amine LARBI, with a focus on customs brokerage and freight forwarding for Algerian importers and exporters." },
   { year: "2010s", title: "National Expansion",  desc: "Opened branches in Oran, Skikda, Mostaganem, Arzew, Djendjen and Annaba — creating full national coverage across all major Algerian ports." },
   { year: "2020+", title: "Growing Operations", desc: "Grew to a 19-strong multilingual team with 10 service vehicles, handling containers, break-bulk, air freight, heavy-lift cargo, and project logistics." },
   { year: "2024",  title: "Present Day",         desc: "One of Algeria's leading customs brokers and logistic providers — committed to simplifying logistics for local and international clients." },
@@ -62,7 +62,7 @@ export default function AboutPage() {
                   { label: "Founded", value: "2006" },
                   { label: "Managing Director", value: "Mr. Said Amine LARBI" },
                   { label: "Total Staff", value: "19 professionals" },
-                  { label: "Service Vehicles", value: "10 vehicles" },
+                  { label: "Branches", value: "7 across Algeria" },
                 ].map((fact) => (
                   <div key={fact.label} className="p-4 rounded-xl bg-muted/50 border border-border">
                     <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-1">{fact.label}</p>
@@ -116,7 +116,7 @@ export default function AboutPage() {
               </div>
               <h2 className="text-4xl sm:text-5xl font-extrabold text-white drop-shadow-lg mb-3">Port of Algiers</h2>
               <p className="text-white/90 text-base leading-relaxed max-w-xl font-medium drop-shadow">
-                Algeria&apos;s largest commercial port — the gateway from which necotrans Transit connects the country to the world.
+                Algeria&apos;s largest commercial port — the gateway from which Necotrans Transit connects the country to the world.
               </p>
             </div>
             <div className="hidden sm:flex flex-col items-end text-right flex-shrink-0">

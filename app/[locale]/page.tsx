@@ -28,7 +28,7 @@ const newsItems = [
   {
     category: "Company News",
     date: "2024",
-    title: "necotrans Transit — 18 Years Serving Algerian Trade",
+    title: "Necotrans Transit — 18 Years Serving Algerian Trade",
     img: "https://images.unsplash.com/photo-1595246140625-573b715d11dc?w=700&q=80",
   },
   {
@@ -50,7 +50,7 @@ const stats = [
   { value: "2006", key: "years" },
   { value: "7",    key: "branches" },
   { value: "19",   key: "staff" },
-  { value: "10",   key: "vehicles" },
+
 ];
 
 export default function HomePage() {
@@ -156,7 +156,7 @@ export default function HomePage() {
             <div className="grid grid-cols-3 gap-6">
               {[
                 { value: "7",   key: "stat1" },
-                { value: "10",  key: "stat2" },
+                { value: "19",  key: "stat2" },
                 { value: "18+", key: "stat3" },
               ].map(({ value, key }) => (
                 <div key={key} className="text-center bg-white/10 rounded-2xl p-6 border border-white/15">

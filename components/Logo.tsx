@@ -5,55 +5,68 @@ export default function Logo({
   className?: string;
   variant?: "light" | "dark";
 }) {
-  const nameColor    = variant === "dark" ? "#ffffff"              : "#555555";
-  const transitColor = variant === "dark" ? "rgba(255,255,255,0.70)" : "#888888";
+  const nameColor    = variant === "dark" ? "#ffffff"               : "#1a1a2e";
+  const transitColor = variant === "dark" ? "rgba(255,255,255,0.60)" : "#666666";
+  const RED = "#CC1A1A";
+
+  /*
+    Globe mark construction:
+    - Circle clip: cx=44, cy=45, r=42
+    - 7 red rectangular bands rotated +17° clockwise around (44,45)
+    - Band y-positions are computed so that after rotation, all 7 bands
+      fall evenly within the globe circle (screen y 3–87).
+    - Each band: h=7px, gap≈7px → 1:1 ratio matching the real logo.
+    - x span (-30 to 130) ensures bands fill the circle even after rotation.
+  */
+  const bands = [
+    { y: 1  },
+    { y: 15 },
+    { y: 29 },
+    { y: 43 },
+    { y: 57 },
+    { y: 71 },
+    { y: 85 },
+  ];
 
   return (
     <svg
-      viewBox="0 0 250 78"
+      viewBox="0 0 295 90"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
-      aria-label="necotrans Transit"
+      aria-label="Necotrans Transit"
       role="img"
     >
-      {/* ── Red swoosh / wing icon ── */}
-      {/* 7 curved stripes fanning from lower-left to upper-right */}
-      {/* Stripe 1 — innermost */}
-      <path d="M 9 68 Q 3 44 24 10 L 28 13 Q 8 47 13 68 Z" fill="#D42B2B"/>
-      {/* Stripe 2 */}
-      <path d="M 15 70 Q 8 43 32 8 L 36 11 Q 12 45 19 70 Z" fill="#D32828"/>
-      {/* Stripe 3 */}
-      <path d="M 22 71 Q 14 42 40 6 L 44 9 Q 18 44 26 71 Z" fill="#CC2424"/>
-      {/* Stripe 4 — middle */}
-      <path d="M 29 72 Q 21 41 48 5 L 52 8 Q 25 43 33 72 Z" fill="#C82020"/>
-      {/* Stripe 5 */}
-      <path d="M 36 72 Q 28 40 56 4 L 60 7 Q 32 42 40 72 Z" fill="#C41C1C"/>
-      {/* Stripe 6 */}
-      <path d="M 44 71 Q 36 38 63 3 L 67 6 Q 40 40 48 71 Z" fill="#C01818"/>
-      {/* Stripe 7 — outermost */}
-      <path d="M 52 69 Q 44 36 69 1 L 72 4 Q 48 38 56 69 Z" fill="#BB1414"/>
+      <defs>
+        <clipPath id="nc-globe-clip">
+          <circle cx="44" cy="45" r="42" />
+        </clipPath>
+      </defs>
 
-      {/* ── Wordmark ── */}
-      {/* "necotrans" — lowercase, medium weight, gray */}
+      {/* Globe mark */}
+      <g clipPath="url(#nc-globe-clip)" transform="rotate(17 44 45)">
+        {bands.map(({ y }, i) => (
+          <rect key={i} x="-30" y={y} width="160" height="7" fill={RED} />
+        ))}
+      </g>
+
+      {/* Wordmark */}
       <text
-        x="80" y="46"
+        x="94" y="48"
         fontFamily="'Helvetica Neue', Helvetica, Arial, sans-serif"
-        fontSize="34"
-        fontWeight="400"
+        fontSize="36"
+        fontWeight="700"
         letterSpacing="-0.5"
         fill={nameColor}
       >
-        necotrans
+        Necotrans
       </text>
-
-      {/* "Transit" — below, lighter, smaller */}
       <text
-        x="83" y="66"
+        x="96" y="70"
         fontFamily="'Helvetica Neue', Helvetica, Arial, sans-serif"
-        fontSize="20"
+        fontSize="19"
         fontWeight="300"
-        letterSpacing="0.5"
+        letterSpacing="1"
         fill={transitColor}
       >
         Transit

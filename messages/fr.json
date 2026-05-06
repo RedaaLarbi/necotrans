@@ -10,7 +10,7 @@
   "hero": {
     "badge": "Alger, Algérie · Depuis 2006",
     "title": "Votre Logistique, Notre Engagement",
-    "subtitle": "necotrans Transit est un commissionnaire en douane et prestataire logistique engagé envers ses clients. Notre mission : simplifier votre logistique — vos problèmes deviennent les nôtres, nos solutions deviennent les vôtres.",
+    "subtitle": "Necotrans Transit est un commissionnaire en douane et prestataire logistique engagé envers ses clients. Notre mission : simplifier votre logistique — vos problèmes deviennent les nôtres, nos solutions deviennent les vôtres.",
     "cta1": "Demander un Devis",
     "cta2": "Nos Services"
   },
@@ -18,20 +18,38 @@
     "label": "Nos Services",
     "heading": "Une Gamme Complète de Services Logistiques",
     "subtitle": "Du dédouanement aux projets de transport lourd — nous gérons tout à travers l'Algérie.",
-    "customs": { "title": "Dédouanement", "desc": "Dédouanement import/export, collectes et livraisons locales, entreposage, consolidation, marchandises dangereuses et conseil douanier." },
-    "maritime": { "title": "Services Maritimes", "desc": "Agence et coordination pour le dédouanement portuaire, envois dangereux, expéditions maritimes exceptionnelles, importation/exportation temporaire et autorisations marines marchandes." },
-    "airport": { "title": "Assistance Aéroportuaire", "desc": "Accueil à l'aéroport, dédouanement, transport local, étude des projets d'import/export temporaires et permanents, achats locaux et avances de trésorerie." },
-    "stevedoring": { "title": "Acconage / Manutention", "desc": "Services d'acconage professionnels dans les ports algériens : chargement, déchargement et manutention pour tous types de navires." },
-    "trucking": { "title": "Transport Routier", "desc": "Transport routier local et national avec une flotte de 10 véhicules de service couvrant toutes les régions d'Algérie." },
-    "projectLogistics": { "title": "Logistique de Projets", "desc": "Solutions de transport lourd pour les marchandises dépassant 4 000 MT. Équipements spécialisés pour les cargaisons hors gabarit." },
+    "customs": {
+      "title": "Dédouanement",
+      "desc": "Dédouanement import/export, collectes et livraisons locales, entreposage, consolidation, marchandises dangereuses et conseil douanier."
+    },
+    "maritime": {
+      "title": "Services Maritimes",
+      "desc": "Agence et coordination pour le dédouanement portuaire, envois dangereux, expéditions maritimes exceptionnelles, importation/exportation temporaire et autorisations marines marchandes."
+    },
+    "airport": {
+      "title": "Assistance Aéroportuaire",
+      "desc": "Accueil à l'aéroport, dédouanement, transport local, étude des projets d'import/export temporaires et permanents, achats locaux et avances de trésorerie."
+    },
+    "stevedoring": {
+      "title": "Acconage / Manutention",
+      "desc": "Services d'acconage professionnels dans les ports algériens : chargement, déchargement et manutention pour tous types de navires."
+    },
+    "trucking": {
+      "title": "Transport Routier",
+      "desc": "Transport routier local et national couvrant toutes les régions d'Algérie."
+    },
+    "projectLogistics": {
+      "title": "Logistique de Projets",
+      "desc": "Solutions de transport lourd pour les marchandises dépassant 4 000 MT. Équipements spécialisés pour les cargaisons hors gabarit."
+    },
     "learnMore": "En Savoir Plus"
   },
   "corridor": {
     "label": "Notre Couverture",
     "heading": "7 Agences à Travers l'Algérie",
-    "subtitle": "Avec des bureaux à Alger (siège), Oran, Mostaganem, Arzew, Skikda, Djendjen et Annaba, necotrans Transit assure une couverture nationale complète — prêt à vous accompagner dans chaque port et aéroport algérien.",
+    "subtitle": "Avec des bureaux à Alger (siège), Oran, Mostaganem, Arzew, Skikda, Djendjen et Annaba, Necotrans Transit assure une couverture nationale complète — prêt à vous accompagner dans chaque port et aéroport algérien.",
     "stat1": "Agences en Algérie",
-    "stat2": "Véhicules de Service",
+    "stat2": "Professionnels",
     "stat3": "Années d'Expérience",
     "cta": "Nos Bureaux"
   },
@@ -50,13 +68,12 @@
   "stats": {
     "years": "Depuis 2006",
     "branches": "Agences en Algérie",
-    "staff": "Professionnels",
-    "vehicles": "Véhicules de Service"
+    "staff": "Professionnels"
   },
   "about": {
-    "label": "À Propos de necotrans Transit",
+    "label": "À Propos de Necotrans Transit",
     "heading": "Commissionnaire et Prestataire Logistique de Référence en Algérie",
-    "body": "Fondée en 2006 et dirigée par M. Said Amine LARBI, necotrans Transit Algérie est l'un des principaux commissionnaires en douane et prestataires logistiques algériens. Avec 19 professionnels bilingues (anglais et français), 10 véhicules de service et 7 agences couvrant tout le territoire — d'Alger à Annaba — nous sommes engagés à simplifier votre logistique à chaque étape.",
+    "body": "Fondée en 2006 et dirigée par M. Said Amine LARBI, Necotrans Transit Algérie est l'un des principaux commissionnaires en douane et prestataires logistiques algériens. Avec 19 professionnels bilingues (anglais et français) et 7 agences couvrant tout le territoire — d'Alger à Annaba — nous sommes engagés à simplifier votre logistique à chaque étape.",
     "cta": "Notre Histoire",
     "mission": "Notre engagement fait la différence."
   },
@@ -78,7 +95,7 @@
     "contact": "Contact",
     "hq": "03 Cité Sonelgaz, Gué de Constantine — Alger",
     "hours": "Dim–Jeu : 8h30–12h00 / 13h00–17h00",
-    "copyright": "necotrans Transit Algérie. Tous droits réservés.",
+    "copyright": "Necotrans Transit Algérie. Tous droits réservés.",
     "privacy": "Politique de Confidentialité",
     "terms": "Conditions d'Utilisation"
   },

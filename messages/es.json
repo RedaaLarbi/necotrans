@@ -10,7 +10,7 @@
   "hero": {
     "badge": "Argel, Argelia · Desde 2006",
     "title": "Su Logística, Nuestro Compromiso",
-    "subtitle": "necotrans Transit es un agente de aduanas y proveedor logístico comprometido con sus clientes. Nuestra misión: simplificar su logística — sus problemas son los nuestros y nuestras soluciones son las suyas.",
+    "subtitle": "Necotrans Transit es un agente de aduanas y proveedor logístico comprometido con sus clientes. Nuestra misión: simplificar su logística — sus problemas son los nuestros y nuestras soluciones son las suyas.",
     "cta1": "Solicitar Cotización",
     "cta2": "Nuestros Servicios"
   },
@@ -18,20 +18,38 @@
     "label": "Nuestros Servicios",
     "heading": "Una Gama Completa de Servicios Logísticos",
     "subtitle": "Desde el despacho de aduanas hasta el transporte de cargas especiales — lo gestionamos todo en toda Argelia.",
-    "customs": { "title": "Despacho de Aduanas", "desc": "Despacho de importación/exportación, recogidas y entregas locales, almacenamiento, consolidación, mercancías peligrosas y consultoría aduanera." },
-    "maritime": { "title": "Servicios Marítimos", "desc": "Agencia y coordinación para despacho en puertos, envíos peligrosos, expediciones marítimas excepcionales, importación/exportación temporal y autorizaciones de marina mercante." },
-    "airport": { "title": "Asistencia Aeroportuaria", "desc": "Recepción en aeropuerto, despacho de aduanas, transporte local, proyectos de importación/exportación temporal y permanente, compras locales y anticipos de caja." },
-    "stevedoring": { "title": "Estiba / Manipulación", "desc": "Servicios profesionales de estiba en puertos argelinos: carga, descarga y manipulación de mercancías para todo tipo de buques." },
-    "trucking": { "title": "Transporte por Carretera", "desc": "Transporte local y nacional con una flota de 10 vehículos de servicio que cubre todas las regiones de Argelia." },
-    "projectLogistics": { "title": "Logística de Proyectos", "desc": "Soluciones de transporte pesado para cargas superiores a 4.000 TM. Equipos especializados para mercancías sobredimensionadas." },
+    "customs": {
+      "title": "Despacho de Aduanas",
+      "desc": "Despacho de importación/exportación, recogidas y entregas locales, almacenamiento, consolidación, mercancías peligrosas y consultoría aduanera."
+    },
+    "maritime": {
+      "title": "Servicios Marítimos",
+      "desc": "Agencia y coordinación para despacho en puertos, envíos peligrosos, expediciones marítimas excepcionales, importación/exportación temporal y autorizaciones de marina mercante."
+    },
+    "airport": {
+      "title": "Asistencia Aeroportuaria",
+      "desc": "Recepción en aeropuerto, despacho de aduanas, transporte local, proyectos de importación/exportación temporal y permanente, compras locales y anticipos de caja."
+    },
+    "stevedoring": {
+      "title": "Estiba / Manipulación",
+      "desc": "Servicios profesionales de estiba en puertos argelinos: carga, descarga y manipulación de mercancías para todo tipo de buques."
+    },
+    "trucking": {
+      "title": "Transporte por Carretera",
+      "desc": "Transporte local y nacional que cubre todas las regiones de Argelia."
+    },
+    "projectLogistics": {
+      "title": "Logística de Proyectos",
+      "desc": "Soluciones de transporte pesado para cargas superiores a 4.000 TM. Equipos especializados para mercancías sobredimensionadas."
+    },
     "learnMore": "Saber Más"
   },
   "corridor": {
     "label": "Nuestra Cobertura",
     "heading": "7 Oficinas en Toda Argelia",
-    "subtitle": "Con oficinas en Argel (sede), Orán, Mostaganem, Arzew, Skikda, Djendjen y Annaba, necotrans Transit ofrece cobertura nacional completa — lista para apoyarle en cada puerto y aeropuerto argelino.",
+    "subtitle": "Con oficinas en Argel (sede), Orán, Mostaganem, Arzew, Skikda, Djendjen y Annaba, Necotrans Transit ofrece cobertura nacional completa — lista para apoyarle en cada puerto y aeropuerto argelino.",
     "stat1": "Oficinas en Argelia",
-    "stat2": "Vehículos de Servicio",
+    "stat2": "Profesionales",
     "stat3": "Años de Experiencia",
     "cta": "Nuestras Oficinas"
   },
@@ -50,13 +68,12 @@
   "stats": {
     "years": "Desde 2006",
     "branches": "Oficinas en Argelia",
-    "staff": "Profesionales",
-    "vehicles": "Vehículos de Servicio"
+    "staff": "Profesionales"
   },
   "about": {
-    "label": "Sobre necotrans Transit",
+    "label": "Sobre Necotrans Transit",
     "heading": "Agente de Aduanas y Proveedor Logístico de Referencia en Argelia",
-    "body": "Fundada en 2006 y dirigida por el Director General Sr. Said Amine LARBI, necotrans Transit Argelia es uno de los principales agentes de aduanas y proveedores logísticos del país. Con 19 profesionales bilingües (inglés y francés), 10 vehículos de servicio y 7 oficinas que cubren todo el territorio — de Argel a Annaba — estamos comprometidos a simplificar su logística en cada etapa.",
+    "body": "Fundada en 2006 y dirigida por el Director General Sr. Said Amine LARBI, Necotrans Transit Argelia es uno de los principales agentes de aduanas y proveedores logísticos del país. Con 19 profesionales bilingües (inglés y francés) y 7 oficinas que cubren todo el territorio — de Argel a Annaba — estamos comprometidos a simplificar su logística en cada etapa.",
     "cta": "Nuestra Historia",
     "mission": "Nuestro compromiso marca la diferencia."
   },
@@ -78,7 +95,7 @@
     "contact": "Contacto",
     "hq": "03 Cité Sonelgaz, Gué de Constantine — Argel",
     "hours": "Dom–Jue: 8:30–12:00 / 13:00–17:00",
-    "copyright": "necotrans Transit Argelia. Todos los derechos reservados.",
+    "copyright": "Necotrans Transit Argelia. Todos los derechos reservados.",
     "privacy": "Política de Privacidad",
     "terms": "Condiciones de Uso"
   },
