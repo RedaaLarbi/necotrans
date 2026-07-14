@@ -6,7 +6,7 @@ export default function Logo({
   variant?: "light" | "dark";
 }) {
   const nameColor    = variant === "dark" ? "#ffffff"               : "#1a1a2e";
-  const transitColor = variant === "dark" ? "rgba(255,255,255,0.60)" : "#666666";
+  const transitColor = variant === "dark" ? "rgba(255,255,255,0.90)" : "#3a3a3a";
   const RED = "#CC1A1A";
 
   /*
@@ -65,7 +65,7 @@ export default function Logo({
         x="96" y="70"
         fontFamily="'Helvetica Neue', Helvetica, Arial, sans-serif"
         fontSize="19"
-        fontWeight="300"
+        fontWeight="500"
         letterSpacing="1"
         fill={transitColor}
       >

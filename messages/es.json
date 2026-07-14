@@ -5,7 +5,11 @@
     "about": "Nosotros",
     "news": "Noticias",
     "contact": "Contacto",
-    "getQuote": "Solicitar Cotización"
+    "getQuote": "Solicitar Cotización",
+    "track": "Rastrear envío",
+    "technology": "Tecnología",
+    "docCheck": "Control Documental",
+    "intelligence": "Inteligencia"
   },
   "hero": {
     "badge": "Argel, Argelia · Desde 2006",
@@ -73,7 +77,7 @@
   "about": {
     "label": "Sobre Necotrans Transit",
     "heading": "Agente de Aduanas y Proveedor Logístico de Referencia en Argelia",
-    "body": "Fundada en 2006 y dirigida por el Director General Sr. Said Amine LARBI, Necotrans Transit Argelia es uno de los principales agentes de aduanas y proveedores logísticos del país. Con 19 profesionales bilingües (inglés y francés) y 7 oficinas que cubren todo el territorio — de Argel a Annaba — estamos comprometidos a simplificar su logística en cada etapa.",
+    "body": "Fundada en 2006, Necotrans Transit Argelia es uno de los principales agentes de aduanas y proveedores logísticos del país. Con 19 profesionales bilingües (inglés y francés) y 7 oficinas que cubren todo el territorio — de Argel a Annaba — estamos comprometidos a simplificar su logística en cada etapa.",
     "cta": "Nuestra Historia",
     "mission": "Nuestro compromiso marca la diferencia."
   },
@@ -114,5 +118,267 @@
     "officesHeading": "Nuestras Oficinas",
     "director": "Director General",
     "workingHours": "Horario de Atención"
+  },
+  "quote": {
+    "label": "Cotización Instantánea",
+    "pageTitle": "Cotización de flete LCL instantánea",
+    "pageSub": "Introduce los datos de tu carga. Tarifa todo incluido en menos de 30 segundos — flete marítimo, recargos, manipulación portuaria y despacho aduanero opcional.",
+    "routeSection": "Ruta",
+    "originLabel": "Puerto de origen",
+    "destinationLabel": "Puerto de destino",
+    "dimensionsSection": "Dimensiones de la carga",
+    "volumeLabel": "Volumen",
+    "volumeHint": "Máximo 33 CBM (contenedor 20 pies completo)",
+    "weightLabel": "Peso bruto",
+    "weightHint": "Peso facturable = máx(CBM, kg÷1000)",
+    "cargoSection": "Tipo de mercancía",
+    "cargoTypes": [
+      {
+        "value": "general",
+        "label": "Mercancía general",
+        "note": "Productos manufacturados, maquinaria, bienes de consumo"
+      },
+      {
+        "value": "hazmat",
+        "label": "Mercancías peligrosas",
+        "note": "ADR clase 1–9, requiere MSDS"
+      },
+      {
+        "value": "refrigerated",
+        "label": "Temperatura controlada",
+        "note": "Farmacia, alimentación, +2°C a +8°C"
+      },
+      {
+        "value": "oversized",
+        "label": "Sobredimensionado / fuera de gálibo",
+        "note": "Supera dimensiones estándar de palé"
+      }
+    ],
+    "serviceLevelSection": "Nivel de servicio",
+    "serviceLevels": [
+      {
+        "value": "standard",
+        "label": "Estándar",
+        "sub": "7 días VLC→ALG · mejor tarifa"
+      },
+      {
+        "value": "express",
+        "label": "Express",
+        "sub": "4 días VLC→ALG · +45% de recargo"
+      }
+    ],
+    "customsCheckbox": "Incluir despacho aduanero argelino (DUA)",
+    "customsCheckboxSub": "+380 € · Gestionamos la presentación DUA, la cita DGSN y los documentos de levante",
+    "submitButton": "Obtener cotización",
+    "calculating": "Calculando tarifa…",
+    "quoteReady": "Cotización lista",
+    "validUntil": "Válida hasta",
+    "breakdown": {
+      "ocean": "Flete marítimo (LCL)",
+      "baf": "Recargo combustible (BAF)",
+      "caf": "Recargo monetario (CAF)",
+      "port": "Manipulación portuaria",
+      "docs": "Documentación",
+      "customs": "Despacho aduanero argelino",
+      "total": "Total todo incluido (EUR)",
+      "haulage": "Preacarreo"
+    },
+    "transitDays": "Tránsito estimado",
+    "transitSub": "días · puerta a puerta origen–destino",
+    "bookButton": "Reservar este envío",
+    "emptyState": "Rellena los datos de tu carga y haz clic en",
+    "emptyStateBold": "Obtener cotización",
+    "emptyStateSub": "para ver la tarifa todo incluido.",
+    "haulageSection": "Recogida / preacarreo",
+    "pickupZoneLabel": "Zona de recogida",
+    "fxNote": "importe nativo",
+    "clearanceEstimate": "Tiempo de despacho habitual",
+    "daysUnit": "días",
+    "clearanceEstimateBasis": "basado en {n} envíos históricos"
+  },
+  "book": {
+    "label": "Reservar",
+    "pageTitle": "Reservar un envío",
+    "pageSub": "Completa tu reserva en menos de 5 minutos. Nos encargamos de la documentación aduanera DUA, la cita DGSN y la coordinación con el transportista.",
+    "steps": [
+      "Datos del expedidor",
+      "Datos de la carga",
+      "Documentos",
+      "Confirmar"
+    ],
+    "fromQuote": "Reserva desde cotización",
+    "editQuote": "Editar cotización",
+    "totalRate": "Tarifa todo incluido:",
+    "shipperSection": "Datos del expedidor",
+    "cargoSection": "Datos de la carga",
+    "docsSection": "Documentos",
+    "confirmSection": "Confirmar reserva",
+    "fields": {
+      "company": "Nombre de la empresa",
+      "contact": "Nombre del contacto",
+      "email": "Correo electrónico",
+      "phone": "Teléfono",
+      "address": "Dirección de recogida",
+      "description": "Descripción de la mercancía",
+      "hsCode": "Código HS",
+      "packages": "Número de bultos",
+      "packaging": "Tipo de embalaje",
+      "consignee": "Datos del destinatario (importador argelino)",
+      "collectionDate": "Fecha de recogida preferida"
+    },
+    "docSub": "Sube tu factura comercial y lista de empaque. Generamos automáticamente la declaración DUA, la carta de porte CMR y el certificado de origen.",
+    "docItems": [
+      {
+        "title": "Factura comercial",
+        "sub": "Necesaria para la valoración aduanera",
+        "required": true
+      },
+      {
+        "title": "Lista de empaque",
+        "sub": "Detalle por artículo y bulto",
+        "required": true
+      },
+      {
+        "title": "Certificado de origen (EUR.1)",
+        "sub": "Para tarifa preferencial · Opcional si no está disponible",
+        "required": false
+      }
+    ],
+    "docAutoNote": "Documentos que generamos automáticamente:",
+    "docAutoBody": "DUA (Déclaration Unique en Douane), carta de porte CMR y lista de empaque para aduana argelina — en árabe y francés según requisitos de la DGSN.",
+    "summaryLabels": {
+      "route": "Ruta",
+      "service": "Servicio",
+      "customs": "Despacho aduanero",
+      "totalRate": "Tarifa cotizada todo incluido",
+      "clearedBy": "Despacho aduanero por"
+    },
+    "serviceValue": "Grupaje LCL — Estándar (7 días)",
+    "customsValue": "Incluido (DUA + DGSN)",
+    "terms": "Confirmo que los datos de la carga son correctos y acepto los",
+    "termsLink1": "Términos de servicio de Necotrans",
+    "termsAnd": "y la",
+    "termsLink2": "Política de responsabilidad del transportista",
+    "termsDot": ".",
+    "continue": "Continuar",
+    "confirm": "Confirmar reserva",
+    "confirming": "Confirmando…",
+    "back": "← Atrás",
+    "successTitle": "Reserva confirmada",
+    "successSub": "Tu envío ha sido reservado y la documentación aduanera está siendo preparada.",
+    "successEmailNote": "Recibirás un correo de confirmación con los detalles de la reserva, el borrador DUA y la carta de porte CMR en los próximos 30 minutos.",
+    "trackButton": "Rastrear mi envío",
+    "anotherQuote": "Obtener otra cotización",
+    "docStatuses": [
+      {
+        "title": "Declaración DUA",
+        "body": "Generada automáticamente a partir de los datos de la carga. Lista para presentación DGSN.",
+        "status": "Generating"
+      },
+      {
+        "title": "Carta de porte CMR",
+        "body": "Prerrellenada con los datos del expedidor, destinatario y carga.",
+        "status": "Ready"
+      },
+      {
+        "title": "Lista de empaque",
+        "body": "Formateada según los estándares aduaneros argelinos.",
+        "status": "Ready"
+      }
+    ],
+    "upload": "Subir"
+  },
+  "track": {
+    "label": "Rastrear Envío",
+    "pageTitle": "Seguimiento de envío",
+    "pageSub": "Visibilidad puerta a puerta — despacho aduanero, posición del buque y estado de entrega en un solo lugar.",
+    "searchPlaceholder": "Introduce la referencia del envío (ej. NCT-2024-VLC-0047)",
+    "trackButton": "Rastrear",
+    "activeShipments": "Envíos activos",
+    "otherShipments": "Otros envíos activos",
+    "volume": "Volumen",
+    "weight": "Peso",
+    "vessel": "Buque / Viaje",
+    "eta": "ETA",
+    "notFound": "No se encontró ningún envío con la referencia:"
+  },
+  "technology": {
+    "label": "Cómo funciona",
+    "heading": "La tecnología como producto, no como infraestructura oculta",
+    "subtitle": "La mayoría de los transitarios compran software estándar. Nosotros construimos el motor de precios, la automatización de cumplimiento y el modelo de datos nosotros mismos — porque el corredor España–Argelia no tiene software estándar que comprar.",
+    "pillarsHeading": "Tres motores, no un simple sitio web",
+    "pillarsSub": "La innovación no es un nuevo invento — es tecnología probada aplicada a un corredor que aún no la tiene.",
+    "dataModelHeading": "Los corredores son datos, no código",
+    "dataModelSub": "Seis entidades de configuración componen cada corredor. Añadir uno nuevo es un cambio de datos, no una nueva versión de software.",
+    "roadmapHeading": "Hoja de ruta de integraciones",
+    "roadmapSub": "Capacidades declaradas con honestidad, por etapas — lo que está activo hoy y lo que está previsto.",
+    "closingHeading": "Por qué es difícil de copiar"
+  },
+  "docengine": {
+    "label": "Control de cumplimiento",
+    "pageTitle": "DocEngine — Control de cumplimiento de importación a Argelia",
+    "pageSub": "Introduce los datos del envío, del importador y de los documentos. DocEngine valida la domiciliación bancaria, el registro ALGEX, la legalización de certificados y la coherencia entre documentos antes de reservar.",
+    "shipmentSection": "Envío y mercancía",
+    "destinationLabel": "Puerto de destino",
+    "cargoLabel": "Tipo de mercancía",
+    "declaredValueLabel": "Valor declarado",
+    "importerSection": "Importador y domiciliación bancaria",
+    "importerNameLabel": "Nombre del importador",
+    "importerNifLabel": "NIF del importador",
+    "domiciliationRefLabel": "Referencia de domiciliación bancaria",
+    "domiciliationBankLabel": "Banco domiciliatario",
+    "algexRefLabel": "Referencia de registro ALGEX",
+    "algexRefHint": "Requerido para mercancías peligrosas y sobredimensionadas",
+    "documentsSection": "Datos documentales",
+    "documentsSub": "Introduce los campos tal como aparecen en cada documento — DocEngine verifica su coherencia.",
+    "invoiceNumberLabel": "Número de factura comercial",
+    "invoiceValueLabel": "Valor de la factura",
+    "invoiceImporterNameLabel": "Nombre del importador en la factura",
+    "packingListNumberLabel": "Número de lista de empaque",
+    "packingListValueLabel": "Valor de la lista de empaque",
+    "certNumberLabel": "Número de certificado de origen (EUR.1)",
+    "certLegalizedCheckbox": "El certificado ha sido legalizado",
+    "duaSectionLabel": "Verificación cruzada DUA (borrador)",
+    "duaDomiciliationRefLabel": "Referencia de domiciliación en la DUA",
+    "duaImporterNifLabel": "NIF del importador en la DUA",
+    "submitButton": "Ejecutar control de cumplimiento",
+    "validating": "Validando…",
+    "statusReady": "Listo para reservar",
+    "statusNeedsAttention": "Requiere atención",
+    "statusBlocked": "Bloqueado",
+    "requiredDocsHeading": "Documentos requeridos para este envío",
+    "emptyState": "Introduce los datos del envío, del importador y de los documentos y haz clic en",
+    "emptyStateBold": "Ejecutar control de cumplimiento",
+    "emptyStateSub": "para validar las formalidades de importación argelinas."
+  },
+  "intelligence": {
+    "label": "Inteligencia de Corredor",
+    "pageTitle": "Inteligencia de Corredor",
+    "pageSub": "Como el despacho aduanero en destino funciona sobre la misma plataforma que la cotización en origen, el corredor acumula un conjunto de datos estructurado al que un competidor de un solo lado no tiene acceso.",
+    "avgClearanceLabel": "Tiempo medio de despacho",
+    "sampleSizeLabel": "Envíos en la muestra",
+    "clearanceTableHeading": "Tiempo de despacho por código HS y canal de inspección",
+    "hsCodeColumn": "Código HS",
+    "channelColumn": "Canal",
+    "avgDaysColumn": "Días (media)",
+    "sampleColumn": "Muestra",
+    "errorRankHeading": "Principales causas de errores documentales",
+    "congestionHeading": "Congestión portuaria estacional",
+    "congestionDestLabel": "Puerto de destino",
+    "explanationNote": "Este es el bucle de datos operacional de doble sentido: como Transit Necotrans Argelia gestiona el despacho en destino sobre el mismo sistema que la cotización de Necotrans Valencia en origen, estos patrones son visibles en un solo lugar — no dispersos entre los registros separados de dos empresas.",
+    "monthNames": [
+      "Ene",
+      "Feb",
+      "Mar",
+      "Abr",
+      "May",
+      "Jun",
+      "Jul",
+      "Ago",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dic"
+    ]
   }
 }

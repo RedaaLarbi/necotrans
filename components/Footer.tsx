@@ -18,9 +18,11 @@ export default function Footer() {
   ];
 
   const company = [
-    { label: nav("about"),   href: "/about" },
-    { label: nav("news"),    href: "/news" },
-    { label: nav("contact"), href: "/contact" },
+    { label: nav("getQuote"), href: "/quote" },
+    { label: nav("track"),    href: "/track" },
+    { label: nav("about"),    href: "/about" },
+    { label: nav("news"),     href: "/news" },
+    { label: nav("contact"),  href: "/contact" },
   ];
 
   return (

@@ -5,6 +5,7 @@ import { ArrowRight, MapPin, Target, Heart, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
+import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = { title: "About Us – Necotrans Transit" };
@@ -23,13 +24,15 @@ const branches = [
   { name: "Arzew",      role: "Branch", address: "Arzew, Algeria", phone: "" },
   { name: "Djendjen",   role: "Branch", address: "Djendjen, Algeria", phone: "" },
   { name: "Annaba",     role: "Branch", address: "Annaba, Algeria", phone: "" },
+  { name: "Valencia, Spain", role: "Coming Soon", address: "Opening Nov/Dec 2026", phone: "" },
 ];
 
 const timeline = [
-  { year: "2006",  title: "Founded in Algiers", desc: "Necotrans Transit Algeria was established by Managing Director Mr. Said Amine LARBI, with a focus on customs brokerage and freight forwarding for Algerian importers and exporters." },
+  { year: "2006",  title: "Founded in Algiers", desc: "Necotrans Transit Algeria was established with a focus on customs brokerage and freight forwarding for Algerian importers and exporters." },
   { year: "2010s", title: "National Expansion",  desc: "Opened branches in Oran, Skikda, Mostaganem, Arzew, Djendjen and Annaba — creating full national coverage across all major Algerian ports." },
   { year: "2020+", title: "Growing Operations", desc: "Grew to a 19-strong multilingual team with 10 service vehicles, handling containers, break-bulk, air freight, heavy-lift cargo, and project logistics." },
   { year: "2024",  title: "Present Day",         desc: "One of Algeria's leading customs brokers and logistic providers — committed to simplifying logistics for local and international clients." },
+  { year: "2026",  title: "Necotrans Valencia — Coming Soon", desc: "Opening our first international office in Valencia, Spain, bringing 19 years of Algerian operational expertise online for the Spain–Algeria trade corridor." },
 ];
 
 export default function AboutPage() {
@@ -47,7 +50,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Mission & Director */}
+      {/* Mission */}
       <section className="py-20 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-start">
@@ -60,7 +63,7 @@ export default function AboutPage() {
               <div className="grid grid-cols-2 gap-4 mb-8">
                 {[
                   { label: "Founded", value: "2006" },
-                  { label: "Managing Director", value: "Mr. Said Amine LARBI" },
+                  { label: "Headquarters", value: "Algiers, Algeria" },
                   { label: "Total Staff", value: "19 professionals" },
                   { label: "Branches", value: "7 across Algeria" },
                 ].map((fact) => (
@@ -157,17 +160,22 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
             <p className="text-xs font-semibold tracking-[0.25em] uppercase text-[var(--brand)] mb-3">Our Network</p>
-            <h2 className="text-3xl font-bold text-foreground">7 Branches Across Algeria</h2>
+            <h2 className="text-3xl font-bold text-foreground">7 Branches Across Algeria — Plus Valencia, Spain</h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {branches.map((branch) => (
               <div key={branch.name}
-                className={`p-5 rounded-xl border ${branch.role === "Head Office" ? "border-[var(--brand)] bg-[var(--brand)]/5" : "border-border bg-card"}`}>
+                className={cn(
+                  "p-5 rounded-xl border",
+                  branch.role === "Head Office" ? "border-[var(--brand)] bg-[var(--brand)]/5"
+                    : branch.role === "Coming Soon" ? "border-dashed border-[var(--orange)]/40 bg-card"
+                    : "border-border bg-card"
+                )}>
                 <div className="flex items-center gap-2 mb-2">
                   <MapPin className={`h-4 w-4 flex-shrink-0 ${branch.role === "Head Office" ? "text-[var(--orange)]" : "text-[var(--brand)]"}`} />
                   <h4 className="font-bold text-foreground">{branch.name}</h4>
                 </div>
-                <p className={`text-xs font-semibold uppercase tracking-wider mb-2 ${branch.role === "Head Office" ? "text-[var(--orange)]" : "text-muted-foreground"}`}>
+                <p className={`text-xs font-semibold uppercase tracking-wider mb-2 ${branch.role === "Head Office" || branch.role === "Coming Soon" ? "text-[var(--orange)]" : "text-muted-foreground"}`}>
                   {branch.role}
                 </p>
                 <p className="text-xs text-muted-foreground leading-relaxed">{branch.address}</p>

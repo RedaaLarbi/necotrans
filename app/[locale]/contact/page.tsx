@@ -3,10 +3,11 @@
 import Image from "next/image";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
-import { Phone, Mail, MapPin, Clock, Send, User } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
+import { cn } from "@/lib/utils";
 
 const offices = [
   {
@@ -34,6 +35,15 @@ const offices = [
     phone: "",
     email: "",
     hours: "Sun–Thu: 8:30–17:00",
+    primary: false,
+  },
+  {
+    city: "Valencia, Spain",
+    role: "Coming Soon",
+    address: "Opening Nov/Dec 2026",
+    phone: "",
+    email: "",
+    hours: "",
     primary: false,
   },
 ];
@@ -128,21 +138,18 @@ export default function ContactPage() {
             <div className="space-y-5">
               <h2 className="text-2xl font-bold text-foreground">{t("officesHeading")}</h2>
 
-              {/* Director card */}
-              <Card className="bg-[var(--brand)] text-white border-0">
-                <CardContent className="p-5">
-                  <User className="h-5 w-5 mb-2 opacity-80" />
-                  <p className="text-xs uppercase tracking-wider text-white/60 mb-1">{t("director")}</p>
-                  <p className="font-bold text-white">Mr. Said Amine LARBI</p>
-                </CardContent>
-              </Card>
-
               {/* Offices */}
               {offices.map((office) => (
-                <Card key={office.city} className={`border-border ${office.primary ? "border-[var(--brand)]/30" : ""}`}>
+                <Card
+                  key={office.city}
+                  className={cn(
+                    office.primary && "border border-[var(--brand)]/30",
+                    office.role === "Coming Soon" && "border border-dashed border-[var(--orange)]/40"
+                  )}
+                >
                   <CardContent className="p-5 space-y-3">
                     <div>
-                      <p className="text-xs font-medium text-[var(--brand)] uppercase tracking-wider">{office.role}</p>
+                      <p className={`text-xs font-medium uppercase tracking-wider ${office.role === "Coming Soon" ? "text-[var(--orange)]" : "text-[var(--brand)]"}`}>{office.role}</p>
                       <h3 className="font-bold text-foreground mt-0.5">{office.city}</h3>
                     </div>
                     <Separator />
@@ -169,10 +176,12 @@ export default function ContactPage() {
                           </a>
                         </li>
                       )}
-                      <li className="flex items-center gap-2">
-                        <Clock className="h-3.5 w-3.5 text-[var(--brand)] flex-shrink-0" />
-                        <span className="text-xs text-muted-foreground">{office.hours}</span>
-                      </li>
+                      {office.hours && (
+                        <li className="flex items-center gap-2">
+                          <Clock className="h-3.5 w-3.5 text-[var(--brand)] flex-shrink-0" />
+                          <span className="text-xs text-muted-foreground">{office.hours}</span>
+                        </li>
+                      )}
                     </ul>
                   </CardContent>
                 </Card>

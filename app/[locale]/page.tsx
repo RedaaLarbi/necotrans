@@ -83,7 +83,7 @@ export default function HomePage() {
               {t("hero.subtitle")}
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/contact">
+              <Link href="/quote">
                 <Button size="lg" className="bg-[var(--orange)] hover:bg-[#1d4ed8] text-white font-semibold px-8 w-full sm:w-auto shadow-lg shadow-[#2563eb]/30">
                   {t("hero.cta1")} <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
@@ -275,7 +275,7 @@ export default function HomePage() {
             <h2 className="text-4xl sm:text-5xl font-bold text-white mb-5 leading-tight">{t("cta.heading")}</h2>
             <p className="text-white/55 text-lg mb-10">{t("cta.subtitle")}</p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/contact">
+              <Link href="/quote">
                 <Button size="lg" className="bg-[var(--orange)] hover:bg-[#1d4ed8] text-white font-semibold px-8 w-full sm:w-auto">
                   {t("cta.cta1")} <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>

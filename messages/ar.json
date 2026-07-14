@@ -5,7 +5,11 @@
     "about": "من نحن",
     "news": "الأخبار",
     "contact": "اتصل بنا",
-    "getQuote": "طلب عرض سعر"
+    "getQuote": "طلب عرض سعر",
+    "track": "Track Shipment",
+    "technology": "التكنولوجيا",
+    "docCheck": "Document Check",
+    "intelligence": "Intelligence"
   },
   "hero": {
     "badge": "الجزائر العاصمة · منذ 2006",
@@ -73,7 +77,7 @@
   "about": {
     "label": "عن نيكوترانس ترانزيت",
     "heading": "وكيل الجمارك والمزود اللوجستي المرجعي في الجزائر",
-    "body": "تأسست عام 2006 تحت قيادة المدير العام السيد سعيد أمين العربي، وأصبحت نيكوترانس ترانزيت الجزائر إحدى شركات التخليص الجمركي والخدمات اللوجستية الرائدة في البلاد. بفضل 19 متخصصاً يتحدثون الإنجليزية والفرنسية و7 فروع تغطي كامل التراب الوطني من الجزائر إلى عنابة — نلتزم بتبسيط لوجستياتكم في كل خطوة.",
+    "body": "تأسست عام 2006، وأصبحت نيكوترانس ترانزيت الجزائر إحدى شركات التخليص الجمركي والخدمات اللوجستية الرائدة في البلاد. بفضل 19 متخصصاً يتحدثون الإنجليزية والفرنسية و7 فروع تغطي كامل التراب الوطني من الجزائر إلى عنابة — نلتزم بتبسيط لوجستياتكم في كل خطوة.",
     "cta": "قصتنا",
     "mission": "التزامنا هو ما يميزنا."
   },
@@ -114,5 +118,267 @@
     "officesHeading": "فروعنا",
     "director": "المدير العام",
     "workingHours": "ساعات العمل"
+  },
+  "quote": {
+    "label": "Instant Quote",
+    "pageTitle": "Instant LCL freight quote",
+    "pageSub": "Enter your cargo details. All-in rate returned in under 30 seconds — ocean freight, surcharges, port handling, and optional customs clearance.",
+    "routeSection": "Route",
+    "originLabel": "Origin port",
+    "destinationLabel": "Destination port",
+    "dimensionsSection": "Cargo dimensions",
+    "volumeLabel": "Volume",
+    "volumeHint": "Maximum 33 CBM (full 20ft container)",
+    "weightLabel": "Gross weight",
+    "weightHint": "Chargeable weight = max(CBM, kg÷1000)",
+    "cargoSection": "Cargo type",
+    "cargoTypes": [
+      {
+        "value": "general",
+        "label": "General cargo",
+        "note": "Manufactured goods, machinery, consumer products"
+      },
+      {
+        "value": "hazmat",
+        "label": "Hazardous materials",
+        "note": "ADR class 1–9, requires MSDS"
+      },
+      {
+        "value": "refrigerated",
+        "label": "Temperature-controlled",
+        "note": "Pharma, food, +2°C to +8°C"
+      },
+      {
+        "value": "oversized",
+        "label": "Oversized / out-of-gauge",
+        "note": "Exceeds standard pallet dimensions"
+      }
+    ],
+    "serviceLevelSection": "Service level",
+    "serviceLevels": [
+      {
+        "value": "standard",
+        "label": "Standard",
+        "sub": "7 days VLC→ALG · best rate"
+      },
+      {
+        "value": "express",
+        "label": "Express",
+        "sub": "4 days VLC→ALG · +45% premium"
+      }
+    ],
+    "customsCheckbox": "Include Algerian customs clearance (DUA)",
+    "customsCheckboxSub": "+€380 · We handle DUA submission, DGSN inspection scheduling, and release docs",
+    "submitButton": "Get instant quote",
+    "calculating": "Calculating rate…",
+    "quoteReady": "Quote ready",
+    "validUntil": "Valid until",
+    "breakdown": {
+      "ocean": "Ocean freight (LCL)",
+      "baf": "Bunker adjustment (BAF)",
+      "caf": "Currency adjustment (CAF)",
+      "port": "Port handling",
+      "docs": "Documentation",
+      "customs": "Algerian customs clearance",
+      "total": "Total all-in (EUR)",
+      "haulage": "Origin haulage"
+    },
+    "transitDays": "Estimated transit",
+    "transitSub": "days · Origin–destination door-to-door",
+    "bookButton": "Book this shipment",
+    "emptyState": "Fill in your cargo details and click",
+    "emptyStateBold": "Get instant quote",
+    "emptyStateSub": "to see the all-in rate.",
+    "haulageSection": "Pickup / origin haulage",
+    "pickupZoneLabel": "Collection zone",
+    "fxNote": "native amount",
+    "clearanceEstimate": "Typical clearance time",
+    "daysUnit": "days",
+    "clearanceEstimateBasis": "based on {n} historical shipments"
+  },
+  "book": {
+    "label": "Book Now",
+    "pageTitle": "Book a shipment",
+    "pageSub": "Complete your booking in under 5 minutes. We handle DUA customs documentation, DGSN inspection scheduling, and carrier coordination.",
+    "steps": [
+      "Shipper details",
+      "Cargo details",
+      "Documents",
+      "Confirm"
+    ],
+    "fromQuote": "Booking from quote",
+    "editQuote": "Edit quote",
+    "totalRate": "All-in rate:",
+    "shipperSection": "Shipper details",
+    "cargoSection": "Cargo details",
+    "docsSection": "Documents",
+    "confirmSection": "Confirm booking",
+    "fields": {
+      "company": "Company name",
+      "contact": "Contact name",
+      "email": "Email address",
+      "phone": "Phone number",
+      "address": "Shipping address (pickup)",
+      "description": "Cargo description",
+      "hsCode": "HS code",
+      "packages": "Number of packages",
+      "packaging": "Packaging type",
+      "consignee": "Consignee details (Algerian importer)",
+      "collectionDate": "Preferred collection date"
+    },
+    "docSub": "Upload your commercial invoice and packing list. We auto-generate the DUA customs declaration, CMR consignment note, and certificate of origin from these inputs.",
+    "docItems": [
+      {
+        "title": "Commercial invoice",
+        "sub": "Required for customs valuation",
+        "required": true
+      },
+      {
+        "title": "Packing list",
+        "sub": "Item-level breakdown per package",
+        "required": true
+      },
+      {
+        "title": "Certificate of origin (EUR.1)",
+        "sub": "For preferential tariff rate · Optional if unavailable",
+        "required": false
+      }
+    ],
+    "docAutoNote": "Documents we auto-generate:",
+    "docAutoBody": "DUA (Déclaration Unique en Douane), CMR consignment note, and Algeria customs packing list — in Arabic and French as required by DGSN.",
+    "summaryLabels": {
+      "route": "Route",
+      "service": "Service",
+      "customs": "Customs clearance",
+      "totalRate": "Total quoted rate",
+      "clearedBy": "Customs clearance by"
+    },
+    "serviceValue": "LCL Groupage — Standard (7 days)",
+    "customsValue": "Included (DUA + DGSN)",
+    "terms": "I confirm the cargo details are accurate and I accept the",
+    "termsLink1": "Necotrans Terms of Service",
+    "termsAnd": "and",
+    "termsLink2": "Carrier Liability Policy",
+    "termsDot": ".",
+    "continue": "Continue",
+    "confirm": "Confirm booking",
+    "confirming": "Confirming…",
+    "back": "← Back",
+    "successTitle": "Booking confirmed",
+    "successSub": "Your shipment has been booked and your customs documentation is being prepared.",
+    "successEmailNote": "A confirmation email with your booking details, DUA draft, and CMR consignment note will be sent to your registered email address within 30 minutes.",
+    "trackButton": "Track your shipment",
+    "anotherQuote": "Get another quote",
+    "docStatuses": [
+      {
+        "title": "DUA declaration",
+        "body": "Auto-generated from your cargo data. Ready for DGSN submission.",
+        "status": "Generating"
+      },
+      {
+        "title": "CMR consignment note",
+        "body": "Pre-filled with shipper, consignee, and cargo details.",
+        "status": "Ready"
+      },
+      {
+        "title": "Packing list",
+        "body": "Formatted for Algerian customs standards.",
+        "status": "Ready"
+      }
+    ],
+    "upload": "Upload"
+  },
+  "track": {
+    "label": "Track Shipment",
+    "pageTitle": "Shipment tracking",
+    "pageSub": "Port-to-door visibility — customs clearance, vessel position, and delivery status in one place.",
+    "searchPlaceholder": "Enter shipment reference (e.g. NCT-2024-VLC-0047)",
+    "trackButton": "Track",
+    "activeShipments": "Active shipments",
+    "otherShipments": "Other active shipments",
+    "volume": "Volume",
+    "weight": "Weight",
+    "vessel": "Vessel / Voyage",
+    "eta": "ETA",
+    "notFound": "No shipment found for reference:"
+  },
+  "technology": {
+    "label": "How It Works",
+    "heading": "Technology as the product, not the backend",
+    "subtitle": "Most freight forwarders buy off-the-shelf software. We built the pricing engine, compliance automation, and data model ourselves — because the Spain–Algeria corridor does not have off-the-shelf software to buy.",
+    "pillarsHeading": "Three Engines, Not One Website",
+    "pillarsSub": "The innovation is not a new invention — it is proven technology applied to a corridor that does not have it yet.",
+    "dataModelHeading": "Corridors Are Data, Not Code",
+    "dataModelSub": "Six configuration entities compose every corridor. Adding a new one is a data change, not a software release.",
+    "roadmapHeading": "Integrations Roadmap",
+    "roadmapSub": "Staged, honest capability claims — what is live today, and what is planned.",
+    "closingHeading": "Why this is hard to copy"
+  },
+  "docengine": {
+    "label": "Compliance Check",
+    "pageTitle": "DocEngine — Algerian import compliance check",
+    "pageSub": "Enter shipment, importer, and document data. DocEngine validates domiciliation bancaire alignment, ALGEX registration, certificate legalization, and cross-document consistency before you book.",
+    "shipmentSection": "Shipment & commodity",
+    "destinationLabel": "Destination port",
+    "cargoLabel": "Cargo type",
+    "declaredValueLabel": "Declared value",
+    "importerSection": "Importer & domiciliation bancaire",
+    "importerNameLabel": "Importer name",
+    "importerNifLabel": "Importer NIF (tax ID)",
+    "domiciliationRefLabel": "Domiciliation bancaire reference",
+    "domiciliationBankLabel": "Domiciliating bank",
+    "algexRefLabel": "ALGEX registration reference",
+    "algexRefHint": "Required for hazardous and oversized cargo",
+    "documentsSection": "Document data",
+    "documentsSub": "Enter the fields as they appear on each document — DocEngine cross-checks them for consistency.",
+    "invoiceNumberLabel": "Commercial invoice number",
+    "invoiceValueLabel": "Invoice value",
+    "invoiceImporterNameLabel": "Invoice importer name",
+    "packingListNumberLabel": "Packing list number",
+    "packingListValueLabel": "Packing list value",
+    "certNumberLabel": "Certificate of Origin (EUR.1) number",
+    "certLegalizedCheckbox": "Certificate has been legalized",
+    "duaSectionLabel": "DUA (draft) cross-check",
+    "duaDomiciliationRefLabel": "DUA domiciliation reference",
+    "duaImporterNifLabel": "DUA importer NIF",
+    "submitButton": "Run compliance check",
+    "validating": "Validating…",
+    "statusReady": "Ready to book",
+    "statusNeedsAttention": "Needs attention",
+    "statusBlocked": "Blocked",
+    "requiredDocsHeading": "Required documents for this shipment",
+    "emptyState": "Fill in the shipment, importer, and document details and click",
+    "emptyStateBold": "Run compliance check",
+    "emptyStateSub": "to validate against Algerian import formalities."
+  },
+  "intelligence": {
+    "label": "Corridor Intelligence",
+    "pageTitle": "Corridor Intelligence",
+    "pageSub": "Because destination clearance runs on the same platform as origin quoting, the corridor accumulates a structured dataset no single-sided competitor has access to.",
+    "avgClearanceLabel": "Avg. clearance time",
+    "sampleSizeLabel": "Shipments in sample",
+    "clearanceTableHeading": "Clearance time by HS code and inspection channel",
+    "hsCodeColumn": "HS code",
+    "channelColumn": "Channel",
+    "avgDaysColumn": "Avg. days",
+    "sampleColumn": "Sample",
+    "errorRankHeading": "Top document-error root causes",
+    "congestionHeading": "Seasonal port congestion",
+    "congestionDestLabel": "Destination port",
+    "explanationNote": "This is the two-sided operational data loop: because Transit Necotrans Algeria runs destination clearance on the same system as Necotrans Valencia origin quoting, patterns like these are visible in one place — not scattered across two companies' separate records.",
+    "monthNames": [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec"
+    ]
   }
 }

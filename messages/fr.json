@@ -5,7 +5,11 @@
     "about": "À Propos",
     "news": "Actualités",
     "contact": "Contact",
-    "getQuote": "Demander un Devis"
+    "getQuote": "Demander un Devis",
+    "track": "Suivre mon envoi",
+    "technology": "Technologie",
+    "docCheck": "Contrôle Documents",
+    "intelligence": "Intelligence"
   },
   "hero": {
     "badge": "Alger, Algérie · Depuis 2006",
@@ -73,7 +77,7 @@
   "about": {
     "label": "À Propos de Necotrans Transit",
     "heading": "Commissionnaire et Prestataire Logistique de Référence en Algérie",
-    "body": "Fondée en 2006 et dirigée par M. Said Amine LARBI, Necotrans Transit Algérie est l'un des principaux commissionnaires en douane et prestataires logistiques algériens. Avec 19 professionnels bilingues (anglais et français) et 7 agences couvrant tout le territoire — d'Alger à Annaba — nous sommes engagés à simplifier votre logistique à chaque étape.",
+    "body": "Fondée en 2006, Necotrans Transit Algérie est l'un des principaux commissionnaires en douane et prestataires logistiques algériens. Avec 19 professionnels bilingues (anglais et français) et 7 agences couvrant tout le territoire — d'Alger à Annaba — nous sommes engagés à simplifier votre logistique à chaque étape.",
     "cta": "Notre Histoire",
     "mission": "Notre engagement fait la différence."
   },
@@ -114,5 +118,267 @@
     "officesHeading": "Nos Agences",
     "director": "Directeur Général",
     "workingHours": "Horaires d'Ouverture"
+  },
+  "quote": {
+    "label": "Devis Instantané",
+    "pageTitle": "Devis fret LCL instantané",
+    "pageSub": "Renseignez vos données cargo. Tarif tout compris retourné en moins de 30 secondes — fret maritime, surcharges, manutention portuaire et dédouanement en option.",
+    "routeSection": "Trajet",
+    "originLabel": "Port d'origine",
+    "destinationLabel": "Port de destination",
+    "dimensionsSection": "Dimensions du cargo",
+    "volumeLabel": "Volume",
+    "volumeHint": "Maximum 33 CBM (conteneur 20 pieds complet)",
+    "weightLabel": "Poids brut",
+    "weightHint": "Poids taxable = max(CBM, kg÷1000)",
+    "cargoSection": "Type de marchandise",
+    "cargoTypes": [
+      {
+        "value": "general",
+        "label": "Marchandise générale",
+        "note": "Produits manufacturés, machines, biens de consommation"
+      },
+      {
+        "value": "hazmat",
+        "label": "Matières dangereuses",
+        "note": "ADR classe 1–9, MSDS requis"
+      },
+      {
+        "value": "refrigerated",
+        "label": "Température dirigée",
+        "note": "Pharma, alimentaire, +2°C à +8°C"
+      },
+      {
+        "value": "oversized",
+        "label": "Hors gabarit",
+        "note": "Dépasse les dimensions palettes standard"
+      }
+    ],
+    "serviceLevelSection": "Niveau de service",
+    "serviceLevels": [
+      {
+        "value": "standard",
+        "label": "Standard",
+        "sub": "7 jours VLC→ALG · meilleur tarif"
+      },
+      {
+        "value": "express",
+        "label": "Express",
+        "sub": "4 jours VLC→ALG · +45% de majoration"
+      }
+    ],
+    "customsCheckbox": "Inclure le dédouanement algérien (DUA)",
+    "customsCheckboxSub": "+380 € · Nous gérons le dépôt DUA, la prise de rendez-vous DGSN et les documents de mainlevée",
+    "submitButton": "Obtenir mon devis",
+    "calculating": "Calcul en cours…",
+    "quoteReady": "Devis disponible",
+    "validUntil": "Valable jusqu'au",
+    "breakdown": {
+      "ocean": "Fret maritime (LCL)",
+      "baf": "Surcharge carburant (BAF)",
+      "caf": "Surcharge monnaie (CAF)",
+      "port": "Manutention portuaire",
+      "docs": "Documentation",
+      "customs": "Dédouanement algérien",
+      "total": "Total tout compris (EUR)",
+      "haulage": "Pré-acheminement"
+    },
+    "transitDays": "Transit estimé",
+    "transitSub": "jours · porte-à-porte origine–destination",
+    "bookButton": "Réserver cet envoi",
+    "emptyState": "Renseignez vos données cargo et cliquez sur",
+    "emptyStateBold": "Obtenir mon devis",
+    "emptyStateSub": "pour voir le tarif tout compris.",
+    "haulageSection": "Enlèvement / pré-acheminement",
+    "pickupZoneLabel": "Zone de collecte",
+    "fxNote": "montant natif",
+    "clearanceEstimate": "Délai de dédouanement typique",
+    "daysUnit": "jours",
+    "clearanceEstimateBasis": "basé sur {n} envois historiques"
+  },
+  "book": {
+    "label": "Réserver",
+    "pageTitle": "Réserver un envoi",
+    "pageSub": "Finalisez votre réservation en moins de 5 minutes. Nous gérons la documentation douanière DUA, la prise de rendez-vous DGSN et la coordination transporteur.",
+    "steps": [
+      "Données expéditeur",
+      "Données cargo",
+      "Documents",
+      "Confirmation"
+    ],
+    "fromQuote": "Réservation depuis le devis",
+    "editQuote": "Modifier le devis",
+    "totalRate": "Tarif tout compris :",
+    "shipperSection": "Données expéditeur",
+    "cargoSection": "Données cargo",
+    "docsSection": "Documents",
+    "confirmSection": "Confirmer la réservation",
+    "fields": {
+      "company": "Nom de l'entreprise",
+      "contact": "Nom du contact",
+      "email": "Adresse email",
+      "phone": "Numéro de téléphone",
+      "address": "Adresse d'enlèvement",
+      "description": "Description de la marchandise",
+      "hsCode": "Code SH",
+      "packages": "Nombre de colis",
+      "packaging": "Type d'emballage",
+      "consignee": "Données destinataire (importateur algérien)",
+      "collectionDate": "Date d'enlèvement souhaitée"
+    },
+    "docSub": "Déposez votre facture commerciale et votre liste de colisage. Nous générons automatiquement la déclaration DUA, la lettre de voiture CMR et le certificat d'origine.",
+    "docItems": [
+      {
+        "title": "Facture commerciale",
+        "sub": "Requise pour la valeur en douane",
+        "required": true
+      },
+      {
+        "title": "Liste de colisage",
+        "sub": "Détail article par colis",
+        "required": true
+      },
+      {
+        "title": "Certificat d'origine (EUR.1)",
+        "sub": "Pour tarif préférentiel · Optionnel si indisponible",
+        "required": false
+      }
+    ],
+    "docAutoNote": "Documents que nous générons automatiquement :",
+    "docAutoBody": "DUA (Déclaration Unique en Douane), lettre de voiture CMR et liste de colisage douane Algérie — en arabe et en français conformément aux exigences de la DGSN.",
+    "summaryLabels": {
+      "route": "Trajet",
+      "service": "Service",
+      "customs": "Dédouanement",
+      "totalRate": "Tarif devis tout compris",
+      "clearedBy": "Dédouanement par"
+    },
+    "serviceValue": "Groupage LCL — Standard (7 jours)",
+    "customsValue": "Inclus (DUA + DGSN)",
+    "terms": "Je confirme l'exactitude des données cargo et j'accepte les",
+    "termsLink1": "Conditions générales Necotrans",
+    "termsAnd": "et la",
+    "termsLink2": "Politique de responsabilité transporteur",
+    "termsDot": ".",
+    "continue": "Continuer",
+    "confirm": "Confirmer la réservation",
+    "confirming": "Confirmation en cours…",
+    "back": "← Retour",
+    "successTitle": "Réservation confirmée",
+    "successSub": "Votre envoi est réservé et votre documentation douanière est en cours de préparation.",
+    "successEmailNote": "Un email de confirmation avec vos détails de réservation, le brouillon DUA et la lettre de voiture CMR sera envoyé à votre adresse email dans les 30 minutes.",
+    "trackButton": "Suivre mon envoi",
+    "anotherQuote": "Obtenir un autre devis",
+    "docStatuses": [
+      {
+        "title": "Déclaration DUA",
+        "body": "Générée automatiquement depuis vos données cargo. Prête pour soumission DGSN.",
+        "status": "Generating"
+      },
+      {
+        "title": "Lettre de voiture CMR",
+        "body": "Pré-remplie avec les données expéditeur, destinataire et cargo.",
+        "status": "Ready"
+      },
+      {
+        "title": "Liste de colisage",
+        "body": "Formatée selon les normes douanières algériennes.",
+        "status": "Ready"
+      }
+    ],
+    "upload": "Déposer"
+  },
+  "track": {
+    "label": "Suivi d'Envoi",
+    "pageTitle": "Suivi d'envoi",
+    "pageSub": "Visibilité port-à-porte — statut douanier, position du navire et livraison au même endroit.",
+    "searchPlaceholder": "Saisir la référence d'envoi (ex. NCT-2024-VLC-0047)",
+    "trackButton": "Suivre",
+    "activeShipments": "Envois en cours",
+    "otherShipments": "Autres envois en cours",
+    "volume": "Volume",
+    "weight": "Poids",
+    "vessel": "Navire / Voyage",
+    "eta": "ETA",
+    "notFound": "Aucun envoi trouvé pour la référence :"
+  },
+  "technology": {
+    "label": "Comment ça marche",
+    "heading": "La technologie comme produit, pas comme arrière-boutique",
+    "subtitle": "La plupart des transitaires achètent un logiciel standard. Nous avons construit nous-mêmes le moteur de tarification, l’automatisation de conformité et le modèle de données — car le corridor Espagne–Algérie n’a pas de logiciel standard à acheter.",
+    "pillarsHeading": "Trois moteurs, pas un simple site web",
+    "pillarsSub": "L’innovation n’est pas une nouvelle invention — c’est une technologie éprouvée appliquée à un corridor qui ne l’a pas encore.",
+    "dataModelHeading": "Les corridors sont des données, pas du code",
+    "dataModelSub": "Six entités de configuration composent chaque corridor. En ajouter un nouveau est un changement de données, pas une mise en production.",
+    "roadmapHeading": "Feuille de route des intégrations",
+    "roadmapSub": "Des capacités annoncées honnêtement, par étapes — ce qui est en ligne aujourd’hui, et ce qui est prévu.",
+    "closingHeading": "Pourquoi c’est difficile à copier"
+  },
+  "docengine": {
+    "label": "Contrôle de conformité",
+    "pageTitle": "DocEngine — Contrôle de conformité import Algérie",
+    "pageSub": "Renseignez les données d'expédition, d'importateur et de documents. DocEngine valide la domiciliation bancaire, l'enregistrement ALGEX, la légalisation des certificats et la cohérence entre documents avant réservation.",
+    "shipmentSection": "Expédition et marchandise",
+    "destinationLabel": "Port de destination",
+    "cargoLabel": "Type de marchandise",
+    "declaredValueLabel": "Valeur déclarée",
+    "importerSection": "Importateur et domiciliation bancaire",
+    "importerNameLabel": "Nom de l'importateur",
+    "importerNifLabel": "NIF de l'importateur",
+    "domiciliationRefLabel": "Référence de domiciliation bancaire",
+    "domiciliationBankLabel": "Banque domiciliataire",
+    "algexRefLabel": "Référence d'enregistrement ALGEX",
+    "algexRefHint": "Requis pour les marchandises dangereuses et hors gabarit",
+    "documentsSection": "Données documentaires",
+    "documentsSub": "Saisissez les champs tels qu'ils apparaissent sur chaque document — DocEngine vérifie leur cohérence.",
+    "invoiceNumberLabel": "Numéro de facture commerciale",
+    "invoiceValueLabel": "Valeur de la facture",
+    "invoiceImporterNameLabel": "Nom importateur sur la facture",
+    "packingListNumberLabel": "Numéro de liste de colisage",
+    "packingListValueLabel": "Valeur de la liste de colisage",
+    "certNumberLabel": "Numéro de certificat d'origine (EUR.1)",
+    "certLegalizedCheckbox": "Le certificat a été légalisé",
+    "duaSectionLabel": "Vérification croisée DUA (brouillon)",
+    "duaDomiciliationRefLabel": "Référence de domiciliation sur la DUA",
+    "duaImporterNifLabel": "NIF importateur sur la DUA",
+    "submitButton": "Lancer le contrôle de conformité",
+    "validating": "Validation en cours…",
+    "statusReady": "Prêt à réserver",
+    "statusNeedsAttention": "Attention requise",
+    "statusBlocked": "Bloqué",
+    "requiredDocsHeading": "Documents requis pour cet envoi",
+    "emptyState": "Renseignez les données d'expédition, d'importateur et de documents et cliquez sur",
+    "emptyStateBold": "Lancer le contrôle de conformité",
+    "emptyStateSub": "pour valider les formalités d'import algériennes."
+  },
+  "intelligence": {
+    "label": "Intelligence Corridor",
+    "pageTitle": "Intelligence Corridor",
+    "pageSub": "Comme le dédouanement à destination fonctionne sur la même plateforme que la cotation à l'origine, le corridor accumule un jeu de données structuré auquel un concurrent unilatéral n'a pas accès.",
+    "avgClearanceLabel": "Délai moyen de dédouanement",
+    "sampleSizeLabel": "Envois dans l'échantillon",
+    "clearanceTableHeading": "Délai de dédouanement par code SH et circuit d'inspection",
+    "hsCodeColumn": "Code SH",
+    "channelColumn": "Circuit",
+    "avgDaysColumn": "Jours (moy.)",
+    "sampleColumn": "Échantillon",
+    "errorRankHeading": "Principales causes d'erreurs documentaires",
+    "congestionHeading": "Congestion portuaire saisonnière",
+    "congestionDestLabel": "Port de destination",
+    "explanationNote": "C'est la boucle de données opérationnelle à double sens : comme Transit Necotrans Algérie gère le dédouanement à destination sur le même système que la cotation Necotrans Valencia à l'origine, ces tendances sont visibles en un seul endroit — pas dispersées entre les dossiers séparés de deux entreprises.",
+    "monthNames": [
+      "Jan",
+      "Fév",
+      "Mar",
+      "Avr",
+      "Mai",
+      "Juin",
+      "Juil",
+      "Août",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Déc"
+    ]
   }
 }
